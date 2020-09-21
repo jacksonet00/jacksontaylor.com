@@ -5,15 +5,18 @@ import './App.css';
 const projects = ['1', '2', '3', '4'];
 const experiences = [
 	{
-		title: 'Freelance Software Developer',
+		title: 'Software Developer',
+		company: 'Freelance Software Development',
 		descriptions: ['1', '2', '3', '4', '5'],
 	},
 	{
 		title: 'Bootcamp Teaching Assistant',
+		company: 'University of Central Florida',
 		descriptions: ['6', '7', '8', '9', '10'],
 	},
 	{
 		title: 'Outgoing Shipping Lead',
+		company: 'Sawgrass Nutra Labs',
 		descriptions: ['11', '12', '13', '14'],
 	},
 ];
@@ -130,7 +133,7 @@ const ExperienceSelect = (props) => {
 					color="primary"
 					aria-label="vertical outlined primary button group"
 				>
-					{experiences.map(({ title }, i) => {
+					{experiences.map(({ company }, i) => {
 						return (
 							<Button
 								variant={
@@ -141,7 +144,7 @@ const ExperienceSelect = (props) => {
 								onClick={() => props.onSelect(i)}
 							>
 								{' '}
-								{title}
+								{company}
 							</Button>
 						);
 					})}
