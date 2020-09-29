@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 
 * {
 	margin: 0;
@@ -7,6 +14,7 @@
 
 :root {
 	--family-primary: 'Lato', sans-serif;
+	--family-mono: 'Roboto Mono', 'Courier New', Courier, monospace;
 
 	--size-heading: 32px;
 	--weight-heading: 700;
@@ -17,6 +25,8 @@
 	--weight-callout: 700;
 
 	--size-callout: 18px;
+
+	--size-paragraph: 16px;
 
 	--two-column: 2;
 }
@@ -51,8 +61,19 @@
 .bio-container {
 	width: 650px;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+	font-size: var(--size-paragraph);
 	line-height: 26px;
+	padding-bottom: 3em;
+}
+
+.contact {
+	font-family: var(--family-mono);
+}
+
+.email:hover,
+.twitter:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .footer {
@@ -171,11 +192,13 @@
 	font-size: var(--size-subheading);
 	font-family: var(--family-primary);
 	grid-row: 1 / 2;
+	text-decoration: var(--underline-hover);
 }
 
 .card-desc {
 	font-size: var(--size-callout);
 	grid-row: 2 / 3;
+	text-decoration: var(--underline-hover);
 }
 
 .card-tags {
@@ -192,6 +215,9 @@
 .logo {
 	height: 200px;
 	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0 0.4em 0.4em rgba(0, 0, 0, 0.3);
+	grid-column: 2 / 3;
 }
 
 .component-callout {
@@ -199,6 +225,32 @@
 	font-size: var(--size-callout);
 	font-weight: var(--weight-callout);
 	padding-bottom: 0.5em;
+}
+
+.experience-grid {
+	display: grid;
+	grid-template-columns: 4fr 2fr 8fr;
+	width: 1330px;
+}
+
+.experience-descriptions {
+	grid-column: 4 / 5;
+	width: 100%;
+	height: fit-content;
+	word-wrap: break-word;
+}
+
+.underline {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.socials-container {
+	width: 25vw;
+}
+
+.info-container {
+	width: 25vw;
 }
 
 @media (max-width: 680px) {
@@ -218,6 +270,10 @@
 		flex-direction: column;
 	}
 
+	.grid-3 {
+		width: 75vw;
+	}
+
 	.component-container {
 		flex-direction: column;
 	}
@@ -234,7 +290,23 @@
 		--two-column: 1;
 	}
 
-	.my-selector {
+	.my-selector,
+	.grid-3,
+	.experience-grid {
 		width: 75vw;
+	}
+}
+
+@media (max-width: 1225px) {
+	.logo {
+		display: none;
+	}
+
+	.experience-grid {
+		display: flex;
+	}
+
+	.experience-descriptions ul {
+		padding-left: 1em;
 	}
 }

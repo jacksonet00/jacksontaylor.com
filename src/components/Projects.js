@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SkillIcon from './SkillIcon';
 import '../styles/app.css';
 import colors from '../data/colors';
@@ -9,26 +9,50 @@ const Projects = ({ projects }) => {
 			<div className="component-header">Projects</div>
 			<div className="grid-2">
 				{projects.map((project, i) => {
-					return <ProjectCardView project={project} key={i} />;
+					return (
+						<ProjectCardView
+							project={project}
+							index={i}
+							key={i}
+						/>
+					);
 				})}
 			</div>
 		</div>
 	);
 };
 
-const ProjectCardView = ({ project }) => {
+const ProjectCardView = ({ project, index }) => {
+	const [underline, setUnderline] = useState(false);
+
 	const openLink = () => {
 		if (project.link) {
 			window.open(project.link);
 		}
 	};
 
+	const handleMouseEnter = () => {
+		if (project.link) {
+			setUnderline(true);
+		}
+	};
+
 	return (
 		<div className="card">
-			<div className="card-title" onClick={openLink}>
+			<div
+				className={`card-title${underline ? ' underline' : ''}`}
+				onClick={openLink}
+				onMouseEnter={handleMouseEnter}
+				onMouseLeave={() => setUnderline(false)}
+			>
 				{project.title}
 			</div>
-			<div className="card-desc" onClick={openLink}>
+			<div
+				className={`card-desc${underline ? ' underline' : ''}`}
+				onClick={openLink}
+				onMouseEnter={handleMouseEnter}
+				onMouseLeave={() => setUnderline(false)}
+			>
 				{' '}
 				{project.description}
 			</div>

@@ -13,10 +13,16 @@ import './styles/app.css';
 
 const Footer = () => {
 	return (
-		<div className="footer">
-			<div className="socials-container"></div>
-			<div className="info-container"></div>
-			<div className="signature-container"></div>
+		<div className="component-container">
+			<div className="signature">
+				<p className="component-callout">
+					Made with{' '}
+					<span role="img" aria-label="heart-emoji">
+						❤️
+					</span>{' '}
+					in Florida
+				</p>
+			</div>
 		</div>
 	);
 };
@@ -40,7 +46,7 @@ const App = () => {
 			<Banner scroll={scroll} />
 			<div className="VStack">
 				<Greeting greeting={home.greeting} />
-				<Bio bio={home.bio} />
+				<Bio bio={home.bio} contact={home.contact} />
 				<Projects projects={projects} />
 				<Experiences experiences={experiences} />
 				<Skills skills={skills} />
