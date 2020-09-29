@@ -1,0 +1,65 @@
+.experience-container {
+	padding-top: 5em;
+}
+
+.experience-header {
+	text-align: center;
+	padding-bottom: 1em;
+	font-size: 32px;
+	font-weight: 700;
+	font-family: 'Lato';
+}
+
+.experience-display-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.experience-selector {
+	display: grid;
+	grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+.selector-container {
+	display: flex;
+	align-items: left;
+	text-align: left;
+}
+
+.selection {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+	font-family: 'Lato';
+	text-decoration: none;
+	transition: text-decoration 5s linear;
+}
+
+.selection {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.selection::after {
+	content: '';
+	width: 0px;
+	height: 2px;
+	display: block;
+	background: blue;
+	transition: 300ms;
+}
+
+.selection:hover::after {
+	width: 100%;
+}
+
+.selected::after {
+	content: '';
+	width: 0px;
+	height: 2px;
+	display: block;
+	background: blue;
+	transition: 300ms;
+	width: 100%;
+}
