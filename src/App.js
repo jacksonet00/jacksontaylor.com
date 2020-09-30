@@ -13,7 +13,7 @@ import './styles/app.css';
 
 const Footer = () => {
 	return (
-		<div className="component-container">
+		<div className="component-container footer">
 			<div className="signature">
 				<p className="component-callout">
 					Made with{' '}

@@ -6,7 +6,7 @@ const Skills = ({ skills }) => {
 	return (
 		<div className="component-container">
 			<div className="component-header">Skills</div>
-			<div className="grid-3">
+			<div className="grid-3 min800">
 				{skillTypes.map((skillType, i) => {
 					return (
 						<div className="grid-3-item" key={i}>
@@ -23,6 +23,29 @@ const Skills = ({ skills }) => {
 									</p>
 								);
 							})}
+						</div>
+					);
+				})}
+			</div>
+			<div className="grid-3-row max800">
+				{skillTypes.map((skillType, i) => {
+					return (
+						<div className={`grid-3-row-item`} key={i}>
+							<div className="component-callout skilltype">
+								{skillType}
+							</div>
+							<div className="skill-list">
+								{skills[skillType].map((skill, j) => {
+									return (
+										<p
+											key={j}
+											className="text-container"
+										>
+											{skill}
+										</p>
+									);
+								})}
+							</div>
 						</div>
 					);
 				})}

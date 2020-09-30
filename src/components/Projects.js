@@ -48,7 +48,9 @@ const ProjectCardView = ({ project, index }) => {
 				{project.title}
 			</div>
 			<div
-				className={`card-desc${underline ? ' underline' : ''}`}
+				className={`desktop card-desc${
+					underline ? ' underline' : ''
+				}`}
 				onClick={openLink}
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={() => setUnderline(false)}
@@ -56,9 +58,32 @@ const ProjectCardView = ({ project, index }) => {
 				{' '}
 				{project.description}
 			</div>
-			<div className="card-tags HStack">
+			<div
+				className={`mobile card-desc${
+					underline ? ' underline' : ''
+				}`}
+				onClick={openLink}
+				onMouseEnter={handleMouseEnter}
+				onMouseLeave={() => setUnderline(false)}
+			>
+				{' '}
+				{project.mobileDescription}
+			</div>
+			<div className="card-tags HStack desktop">
 				{project.techstack &&
 					project.techstack.map((tech, i) => {
+						return (
+							<SkillIcon
+								skill={tech}
+								color={colors[tech] || 'red'}
+								key={i}
+							/>
+						);
+					})}
+			</div>
+			<div className="card-tags HStack mobile">
+				{project.mobileTechstack &&
+					project.mobileTechstack.map((tech, i) => {
 						return (
 							<SkillIcon
 								skill={tech}
