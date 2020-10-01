@@ -17,7 +17,7 @@ const Skills = ({ skills }) => {
 								return (
 									<p
 										key={j}
-										className="text-container"
+										className="text-container skill"
 									>
 										{skill}
 									</p>
@@ -39,7 +39,7 @@ const Skills = ({ skills }) => {
 									return (
 										<p
 											key={j}
-											className="text-container"
+											className="text-container skill"
 										>
 											{skill}
 										</p>
