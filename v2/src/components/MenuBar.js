@@ -22,7 +22,7 @@ export const MenuBar = () => {
 						as={Button}
 						onClick={() => window.open(GITHUB_URL, '_blank')}
 					>
-						<MarkGithubIcon size={16} />
+						<MarkGithubIcon size={16 /* magic number */} />
 					</MenuButton>
 					<MenuButton
 						as={Button}
@@ -30,7 +30,7 @@ export const MenuBar = () => {
 							window.open(LINKEDIN_URL, '_blank')
 						}
 					>
-						<AiFillLinkedin size={20} />
+						<AiFillLinkedin size={20 /* magic number */} />
 					</MenuButton>
 					<MenuButton as={Button} onClick={toggleColorMode}>
 						{colorMode === 'light' ? (

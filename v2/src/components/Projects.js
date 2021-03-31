@@ -4,7 +4,7 @@ import { Project } from './Project';
 
 export const Projects = () => {
 	return (
-		<VStack spacing={8} alignItems="start" justifyContent="left">
+		<VStack spacing={12} alignItems="start" justifyContent="left">
 			{data.projects.map((project) => {
 				return (
 					<Project

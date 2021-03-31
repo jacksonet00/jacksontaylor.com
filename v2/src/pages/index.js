@@ -1,4 +1,4 @@
-import { Box, VStack, Grid } from '@chakra-ui/react';
+import { Box, VStack, Grid, Spacer } from '@chakra-ui/react';
 import { Greeting } from '../components/Greeting';
 import { Experiences } from '../components/Experiences';
 import { Skills } from '../components/Skills';
@@ -15,10 +15,14 @@ export default function Home() {
 				<title>Jackson Taylor</title>
 			</Head>
 			<MenuBar />
-			<Box paddingY="24" paddingX="32">
-				<VStack spacing="24">
-					<Greeting />
-					<Grid w="100%" templateColumns="1fr 3fr" gap={12}>
+			<Box padding={24}>
+				<VStack spacing={24}>
+					<Greeting paddingBottom={{ lg: 24, sm: 6 }} />
+					<Grid
+						w="100%"
+						templateColumns={{ lg: '1fr 3fr', sm: '1fr' }}
+						gap={{ lg: 24, sm: 6 }}
+					>
 						<SectionHeader heading="About me" />
 						<AboutMe />
 						<SectionHeader heading="Projects" />

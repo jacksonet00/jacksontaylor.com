@@ -21,14 +21,15 @@ export default {
 		{
 			title: 'Surge Inventory',
 			link: null,
-			description: `Manufacturing database software for tracking & modifying inventory from an clean, intuitive UI, while tracking all FDA required data on the backend for reports.`,
+			description:
+				'Manufacturing inventory software with auto report generation and multi-level relations between orders, products, and materials.',
 			tags: ['Python', 'GraphQL 💜', 'AWS Serverless', 'React'],
 		},
 		{
 			title: 'Reply Chef',
 			link: 'https://github.com/jacksonet00/reply-chef',
 			description:
-				'An AI-driven creator engagement platform. Winner: Accenture Prize @ Swamphacks 2021.',
+				'An AI-driven creator engagement platform. Winner of the Accenture Prize @ Swamphacks 2021.',
 			tags: ['Python', 'Google Cloud NLP', 'React'],
 		},
 		{
@@ -42,7 +43,7 @@ export default {
 			title: 'KNN from CSV',
 			link: 'https://github.com/jacksonet00/KNN-from-CSV',
 			description:
-				'A command line tool for building and saving K Nearest Neighbor classifiers from existing data or spreadsheets. Simplifies the workflow of building classifiers, making machine learning more accessible to non-technical users.',
+				'A command line tool for building classification models from spreadsheets.',
 			tags: ['Python', 'Scikit Learn', 'Pandas'],
 		},
 	],
@@ -74,6 +75,20 @@ export default {
 				`Communicated with superiors while referencing internal data to plan for upcoming shipments.`,
 				`Assisted in training new employees in the special services department.`,
 			],
+		},
+	],
+	skills: [
+		{
+			type: 'Languages',
+			items: ['Python', 'Javascript', 'SQL'],
+		},
+		{
+			type: 'Technologies',
+			items: ['GraphQL', 'Node', 'Pandas'],
+		},
+		{
+			type: 'Tools',
+			items: ['AWS', 'GCP', 'GitHub'],
 		},
 	],
 };
