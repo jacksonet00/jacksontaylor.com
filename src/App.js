@@ -10,6 +10,7 @@ import projects from './data/projects';
 import skills from './data/skills';
 import home from './data/home';
 import './styles/app.css';
+import analytics from './config/analytics';
 
 const Footer = () => {
 	return (
@@ -31,6 +32,12 @@ const App = () => {
 	const [scroll, setScroll] = useState(false);
 
 	useEffect(() => {
+		analytics.logEvent('page_view', {
+			page_location: 'https://jacksontaylor.info/',
+			page_path: '/',
+			page_title: 'Home',
+		});
+
 		window.onscroll = function () {
 			if (window.pageYOffset > 0) {
 				setScroll(true);

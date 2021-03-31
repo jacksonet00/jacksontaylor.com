@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/banner.css';
+import analytics from '../config/analytics';
 
 const Banner = ({ scroll }) => {
 	return (
@@ -11,19 +12,23 @@ const Banner = ({ scroll }) => {
 				<div className="links-container">
 					<div
 						className="link"
-						onClick={() =>
-							window.open('https://github.com/jacksonet00')
-						}
+						onClick={() => {
+							analytics.logEvent('view_github', {});
+							window.open(
+								'https://github.com/jacksonet00'
+							);
+						}}
 					>
 						GitHub
 					</div>
 					<div
 						className="link"
-						onClick={() =>
+						onClick={() => {
+							analytics.logEvent('view_linkedin', {});
 							window.open(
 								'https://www.linkedin.com/in/jacksonet00/'
-							)
-						}
+							);
+						}}
 					>
 						LinkedIn
 					</div>
