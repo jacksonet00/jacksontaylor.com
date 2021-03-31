@@ -6,13 +6,20 @@ import {
 	HStack,
 	Tag,
 	TagLabel,
+	Link,
 } from '@chakra-ui/react';
 
-export const Project = ({ title, description, tags }) => {
+export const Project = ({ title, description, tags, link }) => {
 	return (
 		<Box justifyContent="left" maxW="xl">
 			<VStack justifyContent="left" alignItems="start">
-				<Heading fontSize="medium">{title}</Heading>
+				{link ? (
+					<Link href={link} isExternal>
+						<Heading fontSize="medium">{title}</Heading>
+					</Link>
+				) : (
+					<Heading fontSize="medium">{title}</Heading>
+				)}
 				<Text fontSize="medium">{description}</Text>
 				<HStack justifyContent="left" alignItems="start">
 					{tags.map((tag) => {

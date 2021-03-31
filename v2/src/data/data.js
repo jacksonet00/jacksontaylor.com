@@ -1,7 +1,7 @@
 export default {
 	greeting: {
 		headline: 'Namasté',
-		subText: `I'm Jackson, a full stack software developer.`,
+		subText: `I'm Jackson, a mindful software developer.`,
 	},
 	aboutMe: {
 		paragraphs: [
@@ -20,23 +20,27 @@ export default {
 	projects: [
 		{
 			title: 'Surge Inventory',
+			link: null,
 			description: `Manufacturing database software for tracking & modifying inventory from an clean, intuitive UI, while tracking all FDA required data on the backend for reports.`,
-			tags: ['Python', 'GraphQL', 'AWS Serverless', 'React'],
+			tags: ['Python', 'GraphQL 💜', 'AWS Serverless', 'React'],
 		},
 		{
 			title: 'Reply Chef',
+			link: 'https://github.com/jacksonet00/reply-chef',
 			description:
 				'An AI-driven creator engagement platform. Winner: Accenture Prize @ Swamphacks 2021.',
 			tags: ['Python', 'Google Cloud NLP', 'React'],
 		},
 		{
 			title: 'TrendViz',
+			link: 'https://github.com/jacksonet00/trendviz',
 			description:
 				'A data visualization tool for Twitter trends in the United States.',
 			tags: ['Javascript', 'Node', 'React'],
 		},
 		{
 			title: 'KNN from CSV',
+			link: 'https://github.com/jacksonet00/KNN-from-CSV',
 			description:
 				'A command line tool for building and saving K Nearest Neighbor classifiers from existing data or spreadsheets. Simplifies the workflow of building classifiers, making machine learning more accessible to non-technical users.',
 			tags: ['Python', 'Scikit Learn', 'Pandas'],

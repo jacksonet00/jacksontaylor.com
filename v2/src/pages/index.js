@@ -6,10 +6,14 @@ import { SectionHeader } from '../components/SectionHeader';
 import { AboutMe } from '../components/AboutMe';
 import { Projects } from '../components/Projects';
 import { MenuBar } from '../components/MenuBar';
+import Head from 'next/head';
 
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>Jackson Taylor</title>
+			</Head>
 			<MenuBar />
 			<Box paddingY="24" paddingX="32">
 				<VStack spacing="24">

@@ -12,6 +12,7 @@ export const Projects = () => {
 						title={project.title}
 						description={project.description}
 						tags={project.tags}
+						link={project.link}
 					/>
 				);
 			})}
