@@ -1,76 +1,45 @@
-import {
-	Box,
-	HStack,
-	VStack,
-	Heading,
-	Text,
-	Divider,
-	useMediaQuery,
-} from '@chakra-ui/react';
+import { Box, VStack, Heading, Text, Divider, Flex } from '@chakra-ui/react';
 import data from '../data/data';
 
 export const Skills = () => {
-	const [isGreaterThan775Width] = useMediaQuery('(min-width: 775px)');
-
-	return <>{isGreaterThan775Width ? <SkillsColumns /> : <SkillsStack />}</>;
-};
-
-const SkillsColumns = () => {
 	return (
 		<Box w="xl">
-			<HStack spacing="auto">
-				{data.skills.map((skillSet) => {
-					return (
-						<VStack key={skillSet.type} spacing={6}>
-							<Box>
-								<Heading
-									fontSize="md"
-									paddingBottom={2}
-									textAlign="center"
-								>
-									{skillSet.type}
-								</Heading>
-								<Divider w={24} />
-							</Box>
-							{skillSet.items.map((item) => {
-								return (
-									<Text key={item} fontSize="md">
-										{item}
-									</Text>
-								);
-							})}
-						</VStack>
-					);
-				})}
-			</HStack>
-		</Box>
-	);
-};
-
-const SkillsStack = () => {
-	return (
-		<Box w="xl">
-			<VStack justifyContent="start" alignItems="left" spacing={6}>
+			<Flex
+				direction={{ lg: 'row', base: 'column' }}
+				spacing={{ base: 6, lg: 'auto' }}
+				alignItems={{ base: 'start' }}
+			>
 				{data.skills.map((skillSet) => {
 					return (
 						<VStack
 							key={skillSet.type}
 							spacing={6}
-							justifyContent="start"
-							alignItems="left"
+							paddingBottom={{ base: 6 }}
+							alignItems={{ base: 'start' }}
 						>
 							<Box>
 								<Heading
 									fontSize="md"
 									paddingBottom={2}
+									textAlign={{
+										base: 'left',
+										lg: 'center',
+									}}
 								>
 									{skillSet.type}
 								</Heading>
-								<Divider w={24} />
+								<Divider w={36} />
 							</Box>
 							{skillSet.items.map((item) => {
 								return (
-									<Text key={item} fontSize="md">
+									<Text
+										key={item}
+										fontSize="md"
+										textAlign={{
+											base: 'left',
+											lg: 'center',
+										}}
+									>
 										{item}
 									</Text>
 								);
@@ -78,7 +47,7 @@ const SkillsStack = () => {
 						</VStack>
 					);
 				})}
-			</VStack>
+			</Flex>
 		</Box>
 	);
 };

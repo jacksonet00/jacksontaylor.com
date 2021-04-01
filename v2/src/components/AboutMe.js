@@ -1,11 +1,9 @@
-import { Box, Center, VStack, Text, useMediaQuery } from '@chakra-ui/react';
+import { Box, Center, VStack, Text } from '@chakra-ui/react';
 import data from '../data/data';
 
 export const AboutMe = () => {
-	const [isGreaterThan625Width] = useMediaQuery('(min-width: 625px)');
-
 	return (
-		<Box w={isGreaterThan625Width ? 'xl' : '80vw'}>
+		<Box w={{ base: '80vw', lg: 'xl' }}>
 			<Center>
 				<VStack spacing={6}>
 					{data.aboutMe.paragraphs.map((text, i) => {

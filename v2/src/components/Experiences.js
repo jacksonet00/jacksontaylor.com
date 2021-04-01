@@ -1,25 +1,11 @@
-import {
-	Box,
-	Tabs,
-	TabList,
-	Tab,
-	TabPanels,
-	TabPanel,
-	useMediaQuery,
-} from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react';
 import data from '../data/data';
 import { Experience } from './Experience';
 
 export const Experiences = () => {
-	const [isGreaterThan625Width] = useMediaQuery('(min-width: 625px)');
-
 	return (
-		<Tabs
-			colorScheme="red"
-			isFitted
-			w={isGreaterThan625Width ? 'xl' : '80vw'}
-		>
-			<TabList flexDirection={!isGreaterThan625Width && 'column'}>
+		<Tabs colorScheme="red" isFitted w={{ base: '80vw', lg: 'xl' }}>
+			<TabList flexDirection={{ base: 'column', lg: 'row' }}>
 				{data.experiences.map((exp) => {
 					return (
 						<Tab key={exp.company} fontSize="sm">

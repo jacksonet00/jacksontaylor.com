@@ -1,25 +1,15 @@
-import {
-	VStack,
-	Center,
-	Box,
-	Heading,
-	Text,
-	useMediaQuery,
-} from '@chakra-ui/react';
+import { VStack, Center, Box, Heading, Text } from '@chakra-ui/react';
 import data from '../data/data';
 
 export const Greeting = (props) => {
-	const [isGreaterThan775Width] = useMediaQuery('(min-width: 775px)');
-	const [isGreaterThan625Width] = useMediaQuery('(min-width: 625px)');
-
 	return (
 		<Box {...props}>
-			<VStack spacing={isGreaterThan775Width ? 24 : 12}>
+			<VStack spacing={{ base: 24, lg: 12 }}>
 				<Box>
 					<Center>
 						<Heading
 							fontSize="6xl"
-							paddingTop={!isGreaterThan775Width && 24}
+							paddingTop={{ base: 24, lg: 0 }}
 						>
 							{data.greeting.headline}
 						</Heading>
@@ -28,9 +18,7 @@ export const Greeting = (props) => {
 				<Box>
 					<Center>
 						<Text
-							fontSize={
-								isGreaterThan625Width ? '4xl' : '2xl'
-							}
+							fontSize={{ base: '2xl', lg: '4xl' }}
 							textAlign="center"
 						>
 							{data.greeting.subText}

@@ -3,19 +3,15 @@ import {
 	VStack,
 	Heading,
 	Text,
-	HStack,
 	Tag,
 	TagLabel,
 	Link,
-	useMediaQuery,
 	Wrap,
 } from '@chakra-ui/react';
 
 export const Project = ({ title, description, tags, link }) => {
-	const [isGreaterThan625Width] = useMediaQuery('(min-width: 625px)');
-
 	return (
-		<Box justifyContent="left" w={isGreaterThan625Width ? 'xl' : '80vw'}>
+		<Box justifyContent="left" w={{ base: '80vw', lg: 'xl' }}>
 			<VStack justifyContent="left" alignItems="start">
 				{link ? (
 					<Link href={link} isExternal>
