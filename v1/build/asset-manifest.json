@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3a88eaa.chunk.css",
+    "main.js": "/static/js/main.81c651b4.chunk.js",
+    "main.js.map": "/static/js/main.81c651b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f5ac08cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f5ac08cf.js.map",
+    "static/js/2.28a4fe36.chunk.js": "/static/js/2.28a4fe36.chunk.js",
+    "static/js/2.28a4fe36.chunk.js.map": "/static/js/2.28a4fe36.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3de74a80f74297e1ce3f158306169808.js": "/precache-manifest.3de74a80f74297e1ce3f158306169808.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f3a88eaa.chunk.css.map": "/static/css/main.f3a88eaa.chunk.css.map",
+    "static/js/2.28a4fe36.chunk.js.LICENSE.txt": "/static/js/2.28a4fe36.chunk.js.LICENSE.txt",
+    "static/media/ucf_logo.png": "/static/media/ucf_logo.13671046.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5ac08cf.js",
+    "static/js/2.28a4fe36.chunk.js",
+    "static/css/main.f3a88eaa.chunk.css",
+    "static/js/main.81c651b4.chunk.js"
+  ]
+}
