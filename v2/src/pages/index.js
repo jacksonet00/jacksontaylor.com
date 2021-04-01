@@ -15,6 +15,10 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Jackson Taylor</title>
+				<meta
+					name="viewport"
+					content="initial-scale=1.0, width=device-width"
+				/>
 			</Head>
 			<MenuBar />
 			<Box
