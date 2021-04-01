@@ -18,7 +18,7 @@ export const Greeting = (props) => {
 				<Box>
 					<Center>
 						<Heading
-							fontSize="xxx-large"
+							fontSize="6xl"
 							paddingTop={!isGreaterThan775Width && 24}
 						>
 							{data.greeting.headline}
