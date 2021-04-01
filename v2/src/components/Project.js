@@ -7,11 +7,15 @@ import {
 	Tag,
 	TagLabel,
 	Link,
+	useMediaQuery,
+	Wrap,
 } from '@chakra-ui/react';
 
 export const Project = ({ title, description, tags, link }) => {
+	const [isGreaterThan625Width] = useMediaQuery('(min-width: 625px)');
+
 	return (
-		<Box justifyContent="left" maxW="xl">
+		<Box justifyContent="left" w={isGreaterThan625Width ? 'xl' : '80vw'}>
 			<VStack justifyContent="left" alignItems="start">
 				{link ? (
 					<Link href={link} isExternal>
@@ -21,15 +25,20 @@ export const Project = ({ title, description, tags, link }) => {
 					<Heading fontSize="medium">{title}</Heading>
 				)}
 				<Text fontSize="medium">{description}</Text>
-				<HStack justifyContent="left" alignItems="start">
+				<Wrap justifyContent="left" alignItems="start">
 					{tags.map((tag) => {
 						return (
-							<Tag key={tag} size="lg" borderRadius="none">
+							<Tag
+								colorScheme="red"
+								key={tag}
+								size="lg"
+								borderRadius="none"
+							>
 								<TagLabel>{tag}</TagLabel>
 							</Tag>
 						);
 					})}
-				</HStack>
+				</Wrap>
 			</VStack>
 		</Box>
 	);
