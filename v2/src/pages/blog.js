@@ -1,5 +1,6 @@
 import { Heading, Link, ListItem, UnorderedList } from '@chakra-ui/layout';
 import fs from 'fs';
+import { NavFooterWrapper } from '../components/wrappers/NavFooterWrapper';
 
 export default function Blog({ posts }) {
 	return (
