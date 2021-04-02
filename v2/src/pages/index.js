@@ -18,7 +18,7 @@ export default function Home() {
 					content="initial-scale=1.0, width=device-width"
 				/>
 			</Head>
-			<MenuBar />
+			<MenuBar home />
 			<Box
 				overflowX="hidden"
 				paddingY={24}
