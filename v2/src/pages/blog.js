@@ -1,5 +1,6 @@
 import { Heading, Link, ListItem, UnorderedList } from '@chakra-ui/layout';
 import fs from 'fs';
+import matter from 'gray-matter';
 import { UIWrapper } from '../components/wrappers/UIWrapper';
 
 export default function Blog({ posts }) {
@@ -11,7 +12,9 @@ export default function Blog({ posts }) {
 			<UnorderedList>
 				{posts.map((post, i) => (
 					<ListItem key={i}>
-						<Link href={`/blog/${post}`}>{post}</Link>
+						<Link href={`/blog/${post.filename}`}>
+							{post.title}
+						</Link>
 					</ListItem>
 				))}
 			</UnorderedList>
@@ -21,9 +24,20 @@ export default function Blog({ posts }) {
 
 export const getStaticProps = async () => {
 	const files = fs.readdirSync('src/posts');
+	const posts = [];
+
+	files.forEach((filename) => {
+		const file = fs.readFileSync(`src/posts/${filename}`).toString();
+		const parsedFile = matter(file);
+		posts.push({
+			title: parsedFile.data.title,
+			filename: filename.replace('.md', ''),
+		});
+	});
+
 	return {
 		props: {
-			posts: files.map((filename) => filename.replace('.md', '')),
+			posts,
 		},
 	};
 };
