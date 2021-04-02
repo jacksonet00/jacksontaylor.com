@@ -7,6 +7,7 @@ import { AboutMe } from '../components/AboutMe';
 import { Projects } from '../components/Projects';
 import { MenuBar } from '../components/MenuBar';
 import Head from 'next/head';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -41,6 +42,7 @@ export default function Home() {
 						<Skills />
 					</Grid>
 				</VStack>
+				<Footer />
 			</Box>
 		</>
 	);
