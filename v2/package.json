@@ -1,22 +1,25 @@
 {
-  "name": "v2",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@chakra-ui/icons": "^1.0.8",
-    "@chakra-ui/react": "^1.4.2",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
-    "@primer/octicons-react": "^12.1.0",
-    "framer-motion": "^4",
-    "next": "10.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.2.0"
-  }
+	"name": "v2",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"export": "next export"
+	},
+	"dependencies": {
+		"@chakra-ui/icons": "^1.0.8",
+		"@chakra-ui/react": "^1.4.2",
+		"@emotion/react": "^11",
+		"@emotion/styled": "^11",
+		"@primer/octicons-react": "^12.1.0",
+		"framer-motion": "^4",
+		"gray-matter": "^4.0.2",
+		"markdown-to-jsx": "^7.1.2",
+		"next": "10.1.2",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-icons": "^4.2.0"
+	}
 }
