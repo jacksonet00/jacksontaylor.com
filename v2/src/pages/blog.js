@@ -10,13 +10,19 @@ export default function Blog({ posts }) {
 				Blog
 			</Heading>
 			<UnorderedList>
-				{posts.map((post, i) => (
-					<ListItem key={i}>
-						<Link href={`/blog/${post.filename}`}>
-							{post.title}
-						</Link>
-					</ListItem>
-				))}
+				{posts
+					.sort(
+						(a, b) =>
+							new Date(b.dateCreated) -
+							new Date(a.dateCreated)
+					)
+					.map((post, i) => (
+						<ListItem key={i}>
+							<Link href={`/blog/${post.filename}`}>
+								{post.title}
+							</Link>
+						</ListItem>
+					))}
 			</UnorderedList>
 		</UIWrapper>
 	);
@@ -31,6 +37,7 @@ export const getStaticProps = async () => {
 		const parsedFile = matter(file);
 		posts.push({
 			title: parsedFile.data.title,
+			dateCreated: parsedFile.data.dateCreated,
 			filename: filename.replace('.md', ''),
 		});
 	});
