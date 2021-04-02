@@ -8,20 +8,30 @@ import { MenuBar } from '../../components/MenuBar';
 import { Footer } from '../../components/Footer';
 import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../../constants';
 import { NavFooterWrapper } from '../../components/wrappers/NavFooterWrapper';
+import { Box, Flex } from '@chakra-ui/react';
 
 const Post = ({ contents, data }) => {
-	console.log(data);
 	return (
 		<>
 			<Head>
 				<title>{data.title}</title>
-				<meta title="description" content={data.description} />
+				<meta
+					title="description"
+					content={data.description || ''}
+				/>
 			</Head>
 			<MenuBar />
 			<NavFooterWrapper>
-				<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>
-					{contents}
-				</Markdown>
+				<Flex
+					align={{ base: '', lg: 'center' }}
+					justify={{ base: '', lg: 'center' }}
+				>
+					<Box w={{ base: '80vw', lg: 'xl' }}>
+						<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>
+							{contents}
+						</Markdown>
+					</Box>
+				</Flex>
 			</NavFooterWrapper>
 			<Footer />
 		</>
