@@ -4,16 +4,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import Markdown from 'markdown-to-jsx';
-import {
-	Box,
-	Code,
-	Heading,
-	OrderedList,
-	Text,
-	UnorderedList,
-} from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/layout';
 import { MenuBar } from '../../components/MenuBar';
 import { Footer } from '../../components/Footer';
+import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../../constants';
 
 const Post = ({ contents, data }) => {
 	console.log(data);
@@ -26,90 +20,12 @@ const Post = ({ contents, data }) => {
 			<MenuBar />
 			<Box
 				w="100%"
+				minHeight="100vh"
 				overflowX="hidden"
 				paddingY={{ base: 36, lg: 24 }}
 				paddingX={{ lg: 36, base: '10%' }}
 			>
-				<Markdown
-					options={{
-						overrides: {
-							h1: {
-								component: Heading,
-								props: {
-									fontSize: '4xl',
-									paddingBottom: 5,
-								},
-							},
-							h2: {
-								component: Heading,
-								props: {
-									fontSize: '3xl',
-									paddingBottom: 4,
-								},
-							},
-							h3: {
-								component: Heading,
-								props: {
-									fontSize: '2xl',
-									paddingBottom: 3,
-								},
-							},
-							h4: {
-								component: Heading,
-								props: {
-									fontSize: 'xl',
-									paddingBottom: 2,
-								},
-							},
-							h5: {
-								component: Heading,
-								props: {
-									fontSize: 'lg',
-									paddingBottom: 2,
-								},
-							},
-							h6: {
-								component: Heading,
-								props: {
-									fontSize: 'md',
-									paddingBottom: 2,
-								},
-							},
-							p: {
-								component: Text,
-								props: {
-									fontSize: 'md',
-									paddingBottom: 2,
-								},
-							},
-							ul: {
-								component: UnorderedList,
-								props: {
-									fontSize: 'lg',
-									paddingBottom: 2,
-								},
-							},
-							ol: {
-								component: OrderedList,
-								props: {
-									fontSize: 'lg',
-									paddingBottom: 2,
-								},
-							},
-							code: {
-								component: Code,
-								props: {
-									fontSize: {
-										base: 'sm',
-										sm: 'md',
-										md: 'lg',
-									},
-									paddingBottom: 2,
-								},
-							},
-						},
-					}}
-				>
+				<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>
 					{contents}
 				</Markdown>
 			</Box>
