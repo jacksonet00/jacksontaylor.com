@@ -1,6 +1,7 @@
 import {
 	Code,
 	Heading,
+	ListItem,
 	OrderedList,
 	Text,
 	UnorderedList,
@@ -16,74 +17,76 @@ export const CHAKRA_UI_MARKDOWN_OPTIONS = {
 			component: Heading,
 			props: {
 				fontSize: '4xl',
-				paddingBottom: 5,
+				paddingBottom: 6,
 			},
 		},
 		h2: {
 			component: Heading,
 			props: {
 				fontSize: '3xl',
-				paddingBottom: 4,
+				paddingBottom: 6,
 			},
 		},
 		h3: {
 			component: Heading,
 			props: {
 				fontSize: '2xl',
-				paddingBottom: 3,
+				paddingBottom: 6,
 			},
 		},
 		h4: {
 			component: Heading,
 			props: {
 				fontSize: 'xl',
-				paddingBottom: 2,
+				paddingBottom: 6,
 			},
 		},
 		h5: {
 			component: Heading,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 2,
+				paddingBottom: 6,
 			},
 		},
 		h6: {
 			component: Heading,
 			props: {
 				fontSize: 'md',
-				paddingBottom: 2,
+				paddingBottom: 6,
 			},
 		},
 		p: {
 			component: Text,
 			props: {
-				fontSize: 'md',
-				paddingBottom: 2,
+				fontSize: 'lg',
+				paddingBottom: 6,
 			},
 		},
 		ul: {
 			component: UnorderedList,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 2,
+				paddingBottom: 6,
 			},
 		},
 		ol: {
 			component: OrderedList,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 2,
+				paddingBottom: 6,
+			},
+		},
+		li: {
+			component: ListItem,
+			props: {
+				fontSize: 'lg',
+				paddingBottom: 6,
 			},
 		},
 		code: {
 			component: Code,
 			props: {
-				fontSize: {
-					base: 'sm',
-					sm: 'md',
-					md: 'lg',
-				},
-				paddingBottom: 2,
+				fontSize: 'md',
 			},
 		},
 	},
