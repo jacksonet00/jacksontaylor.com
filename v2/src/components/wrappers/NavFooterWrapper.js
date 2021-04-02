@@ -5,7 +5,7 @@ import { MenuBar } from '../MenuBar';
 export const NavFooterWrapper = (props) => {
 	return (
 		<FullPageBox>
-			<MenuBar />
+			<MenuBar {...props} />
 			{props.children}
 			<Footer />
 		</FullPageBox>

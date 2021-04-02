@@ -18,7 +18,7 @@ export default function Home() {
 					content="initial-scale=1.0, width=device-width"
 				/>
 			</Head>
-			<NavFooterWrapper>
+			<NavFooterWrapper home>
 				<VStack spacing={24}>
 					<Greeting paddingBottom={24} />
 					<Grid
