@@ -4,10 +4,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import Markdown from 'markdown-to-jsx';
-import { Box } from '@chakra-ui/layout';
 import { MenuBar } from '../../components/MenuBar';
 import { Footer } from '../../components/Footer';
 import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../../constants';
+import { NavFooterWrapper } from '../../components/wrappers/NavFooterWrapper';
 
 const Post = ({ contents, data }) => {
 	console.log(data);
@@ -18,17 +18,11 @@ const Post = ({ contents, data }) => {
 				<meta title="description" content={data.description} />
 			</Head>
 			<MenuBar />
-			<Box
-				w="100%"
-				minHeight="100vh"
-				overflowX="hidden"
-				paddingY={{ base: 36, lg: 24 }}
-				paddingX={{ lg: 36, base: '10%' }}
-			>
+			<NavFooterWrapper>
 				<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>
 					{contents}
 				</Markdown>
-			</Box>
+			</NavFooterWrapper>
 			<Footer />
 		</>
 	);
