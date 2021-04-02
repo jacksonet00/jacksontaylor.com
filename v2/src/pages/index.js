@@ -6,7 +6,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import { AboutMe } from '../components/AboutMe';
 import { Projects } from '../components/Projects';
 import Head from 'next/head';
-import { NavFooterWrapper } from '../components/wrappers/NavFooterWrapper';
+import { UIWrapper } from '../components/wrappers/UIWrapper';
 
 export default function Home() {
 	return (
@@ -18,7 +18,7 @@ export default function Home() {
 					content="initial-scale=1.0, width=device-width"
 				/>
 			</Head>
-			<NavFooterWrapper home>
+			<UIWrapper home>
 				<VStack spacing={24}>
 					<Greeting paddingBottom={24} />
 					<Grid
@@ -39,7 +39,7 @@ export default function Home() {
 						<Skills />
 					</Grid>
 				</VStack>
-			</NavFooterWrapper>
+			</UIWrapper>
 		</>
 	);
 }

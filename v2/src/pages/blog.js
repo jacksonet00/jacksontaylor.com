@@ -1,10 +1,10 @@
 import { Heading, Link, ListItem, UnorderedList } from '@chakra-ui/layout';
 import fs from 'fs';
-import { NavFooterWrapper } from '../components/wrappers/NavFooterWrapper';
+import { UIWrapper } from '../components/wrappers/UIWrapper';
 
 export default function Blog({ posts }) {
 	return (
-		<NavFooterWrapper>
+		<UIWrapper>
 			<Heading fontSize="4xl" paddingBottom={6}>
 				Blog
 			</Heading>
@@ -15,7 +15,7 @@ export default function Blog({ posts }) {
 					</ListItem>
 				))}
 			</UnorderedList>
-		</NavFooterWrapper>
+		</UIWrapper>
 	);
 }
 

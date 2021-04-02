@@ -2,7 +2,7 @@ import { FullPageBox } from '../containers/FullPageBox';
 import { Footer } from '../Footer';
 import { MenuBar } from '../MenuBar';
 
-export const NavFooterWrapper = (props) => {
+export const UIWrapper = (props) => {
 	return (
 		<FullPageBox>
 			<MenuBar {...props} />

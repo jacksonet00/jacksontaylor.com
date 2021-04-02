@@ -7,7 +7,7 @@ import Markdown from 'markdown-to-jsx';
 import { MenuBar } from '../../components/MenuBar';
 import { Footer } from '../../components/Footer';
 import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../../constants';
-import { NavFooterWrapper } from '../../components/wrappers/NavFooterWrapper';
+import { UIWrapper } from '../../components/wrappers/UIWrapper';
 import { Box, Flex } from '@chakra-ui/react';
 
 const Post = ({ contents, data }) => {
@@ -21,7 +21,7 @@ const Post = ({ contents, data }) => {
 				/>
 			</Head>
 			<MenuBar />
-			<NavFooterWrapper>
+			<UIWrapper>
 				<Flex
 					align={{ base: '', lg: 'center' }}
 					justify={{ base: '', lg: 'center' }}
@@ -32,7 +32,7 @@ const Post = ({ contents, data }) => {
 						</Markdown>
 					</Box>
 				</Flex>
-			</NavFooterWrapper>
+			</UIWrapper>
 			<Footer />
 		</>
 	);
