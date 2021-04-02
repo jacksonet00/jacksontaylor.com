@@ -1,6 +1,17 @@
-import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react';
+import {
+	Tabs,
+	TabList,
+	Tab,
+	TabPanels,
+	TabPanel,
+	Box,
+	UnorderedList,
+	ListItem,
+	HStack,
+	Center,
+	Text,
+} from '@chakra-ui/react';
 import data from '../data/data';
-import { Experience } from './Experience';
 
 export const Experiences = () => {
 	return (
@@ -28,5 +39,23 @@ export const Experiences = () => {
 				})}
 			</TabPanels>
 		</Tabs>
+	);
+};
+
+const Experience = ({ bullets, role, date }) => {
+	return (
+		<Box>
+			<Center paddingBottom={6}>
+				<HStack spacing="auto" w="100%">
+					<Text fontWeight="bold">{role}</Text>
+					<Text fontWeight="bold">{date}</Text>
+				</HStack>
+			</Center>
+			<UnorderedList spacing={6}>
+				{bullets.map((bullet) => {
+					return <ListItem key={bullet}>{bullet}</ListItem>;
+				})}
+			</UnorderedList>
+		</Box>
 	);
 };
