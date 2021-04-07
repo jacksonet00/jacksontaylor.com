@@ -1,7 +1,7 @@
 export default {
 	greeting: {
 		headline: 'Namasté',
-		subText: `I'm Jackson, a mindful software developer.`,
+		subText: `I'm Jackson, a software developer.`,
 	},
 	aboutMe: {
 		paragraphs: [
