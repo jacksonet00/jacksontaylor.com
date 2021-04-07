@@ -5,6 +5,8 @@ import {
 	OrderedList,
 	Text,
 	UnorderedList,
+	Image,
+	Link,
 } from '@chakra-ui/react';
 
 export const GITHUB_URL = 'https://github.com/jacksonet00';
@@ -17,76 +19,95 @@ export const CHAKRA_UI_MARKDOWN_OPTIONS = {
 			component: Heading,
 			props: {
 				fontSize: '4xl',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		h2: {
 			component: Heading,
 			props: {
 				fontSize: '3xl',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		h3: {
 			component: Heading,
 			props: {
 				fontSize: '2xl',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		h4: {
 			component: Heading,
 			props: {
 				fontSize: 'xl',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		h5: {
 			component: Heading,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		h6: {
 			component: Heading,
 			props: {
 				fontSize: 'md',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		p: {
 			component: Text,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		ul: {
 			component: UnorderedList,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		ol: {
 			component: OrderedList,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 6,
+				marginBottom: 6,
 			},
 		},
 		li: {
 			component: ListItem,
 			props: {
 				fontSize: 'lg',
-				paddingBottom: 6,
 			},
 		},
 		code: {
 			component: Code,
 			props: {
-				fontSize: 'md',
+				fontSize: { base: 'sm', md: 'md' },
+				padding: 1,
+				borderRadius: 2,
+				w: { base: '80vw', lg: 'xl' },
+				marginBottom: 6,
+				colorScheme: 'facebook',
+			},
+		},
+		img: {
+			component: Image,
+			props: {
+				marginBottom: 6,
+				marginTop: 6,
+			},
+		},
+		a: {
+			component: Link,
+			props: {
+				marginBottom: 6,
+				textDecoration: 'underline',
+				isExternal: true,
 			},
 		},
 	},
