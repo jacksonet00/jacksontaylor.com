@@ -87,7 +87,7 @@ export const CHAKRA_UI_MARKDOWN_OPTIONS = {
 		code: {
 			component: Code,
 			props: {
-				fontSize: { base: 'sm', md: 'md' },
+				fontSize: { base: 'xs', sm: 'sm', md: 'md' },
 				padding: 1,
 				borderRadius: 2,
 				w: { base: '80vw', lg: 'xl' },
