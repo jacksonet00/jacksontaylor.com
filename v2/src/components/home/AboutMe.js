@@ -1,5 +1,5 @@
 import { Box, Center, VStack, Text, Link } from '@chakra-ui/react';
-import data from '../data/data';
+import data from '../../data';
 
 export const AboutMe = () => {
 	return (

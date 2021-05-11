@@ -8,7 +8,7 @@ import {
 	Link,
 	Wrap,
 } from '@chakra-ui/react';
-import data from '../data/data';
+import data from '../../data';
 
 export const Projects = () => {
 	return (
@@ -43,12 +43,7 @@ const Project = ({ title, description, tags, link }) => {
 				<Wrap justifyContent="left" alignItems="start">
 					{tags.map((tag) => {
 						return (
-							<Tag
-								colorScheme="red"
-								key={tag}
-								size="lg"
-								borderRadius="none"
-							>
+							<Tag colorScheme="red" key={tag} size="lg" borderRadius="none">
 								<TagLabel>{tag}</TagLabel>
 							</Tag>
 						);

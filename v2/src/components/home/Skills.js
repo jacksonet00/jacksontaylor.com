@@ -1,5 +1,5 @@
 import { Box, VStack, Heading, Text, Divider, Flex } from '@chakra-ui/react';
-import data from '../data/data';
+import data from '../../data';
 
 export const Skills = () => {
 	return (
