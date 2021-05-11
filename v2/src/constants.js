@@ -182,6 +182,9 @@ export const CHAKRA_UI_MARKDOWN_OPTIONS = {
 		},
 		code: {
 			component: MyCodeBlock,
+			props: {
+				marginBottom: 6,
+			},
 		},
 		img: {
 			component: Image,
