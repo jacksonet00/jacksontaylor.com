@@ -19,7 +19,7 @@ Getting started using <strong>venv</strong> is super simple.
 
 ### Initialize a project with a venv
 
-```bash
+```text
 mkdir my-project
 cd my-project
 
@@ -28,13 +28,13 @@ python3 -m venv ./venv
 
 Now you should have a virtual enviroment inside your project directory.
 
--    my-project
-     -    venv
-     -    Python files
+- my-project
+  - venv
+  - Python files
 
 ### Activate environment and install dependencies
 
-```bash
+```text
 source ./venv/bin/activate
 
 pip install pandas matplotlib
@@ -50,20 +50,21 @@ In the <strong>venv</strong> module, the method for doing this is to use a <stro
 
 You don't have to write this file yourself, you can generate it automatically using:
 
-```bash
+```text
 pip freeze > requirements.txt
 ```
 
 This should modify your project directory to include this file at the same level as the <strong>venv</strong>:
 
--    my-project
-     -    venv
-     -    requirements.txt
-     -    Python files
+- my-project
+  - venv
+  - requirements.txt
+  - Python files
 
 and the contents of the file should look like:
+`
 
-```txt
+```text
 cycler==0.10.0
 kiwisolver==1.3.1
 matplotlib==3.4.1
@@ -80,7 +81,7 @@ At this point, you should add <strong>venv</strong> to your <strong>.gitignore</
 
 Now if someone were to clone your repository, first they would need to generate a new virtual environment using the same instructions as before. Then they would need to copy over the depnedencies from your <strong>requirements.txt</strong> file using:
 
-```bash
+```text
 pip install -r requirments.txt
 ```
 
@@ -88,9 +89,9 @@ pip install -r requirments.txt
 
 While the <strong>venv</strong> module is lightweight and effective, typing out the commands is a bit annoying and unintuitive. Personally, I've just replaced the command line interface with my own aliases and scripts to make the process easier to commit to memory and work with.
 
-To make these scripts I added the following code to my <strong>.bash_profile</strong> in my root directory. If you don't know what this means [click here](https://www.moncefbelyamani.com/create-aliases-in-bash-profile-to-assign-shortcuts-for-common-terminal-commands/) to learn about aliasing in bash.
+To make these scripts I added the following code to my <strong>.text_profile</strong> in my root directory. If you don't know what this means [click here](https://www.moncefbelyamani.com/create-aliases-in-text-profile-to-assign-shortcuts-for-common-terminal-commands/) to learn about aliasing in text.
 
-```bash
+```text
 alias mkvenv="python3 -m venv venv"
 
 alias initvenv="mkvenv && start venv"
@@ -108,7 +109,7 @@ Here is how you would go about the same process as before with the cleaner synta
 
 ### Initialize a project with a venv
 
-```bash
+```text
 mkdir my-project
 cd my-project
 
@@ -117,20 +118,20 @@ initvenv
 
 ### Activate environment and install dependencies
 
-```bash
+```text
 start venv
 pip install pandas matplotlib
 ```
 
 ### Make a requirements.txt file
 
-```bash
+```text
 mkreq
 ```
 
 ### Load from a requirements.txt file
 
-```bash
+```text
 usereq
 ```
 

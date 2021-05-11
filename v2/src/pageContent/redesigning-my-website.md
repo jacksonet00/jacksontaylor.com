@@ -25,7 +25,7 @@ Once I got the site done I decided I kind of wanted to start a blog. Not anythin
 
 So it was actually really easy to go about doing this because of the way the next framework works. I just had to create a subdirectory of pages called `blog` with a file called `[slug].js` and this automatically gives me access to the `/blog/:slug` route for all my blog pages.
 
-So I made a component there which I learned how to make from Ben Awad. Basically it reads all of the `.md` files in the `posts` directory and then it makes a route with each of the file titles and the markdown is rendered there. Really simple!
+So I made a component there which I learned how to make from Ben Awad. Basically it reads all of the `.md` files in the `blogPosts` directory and then it makes a route with each of the file titles and the markdown is rendered there. Really simple!
 
 I found a library which parses a markdown string into html components, but I wanted to keep the Chakra aesthetic across my entire site. So, I created a config for the parser in my `constants.js` file which maps all of the atomic html components to Chakra components.
 
