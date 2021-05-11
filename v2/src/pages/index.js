@@ -1,10 +1,10 @@
 import { VStack, Grid } from '@chakra-ui/react';
-import { Greeting } from '../components/Greeting';
-import { Experiences } from '../components/Experiences';
-import { Skills } from '../components/Skills';
+import { Greeting } from '../components/home/Greeting';
+import { Experiences } from '../components/home/Experiences';
+import { Skills } from '../components/home/Skills';
 import { SectionHeader } from '../components/SectionHeader';
-import { AboutMe } from '../components/AboutMe';
-import { Projects } from '../components/Projects';
+import { AboutMe } from '../components/home/AboutMe';
+import { Projects } from '../components/home/Projects';
 import Head from 'next/head';
 import { UIWrapper } from '../components/wrappers/UIWrapper';
 
@@ -13,10 +13,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Jackson Taylor</title>
-				<meta
-					name="viewport"
-					content="initial-scale=1.0, width=device-width"
-				/>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 			<UIWrapper home>
 				<VStack spacing={24}>

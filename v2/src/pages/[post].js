@@ -4,10 +4,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import Markdown from 'markdown-to-jsx';
-import { MenuBar } from '../../components/MenuBar';
-import { Footer } from '../../components/Footer';
-import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../../constants';
-import { UIWrapper } from '../../components/wrappers/UIWrapper';
+import { MenuBar } from '../components/MenuBar';
+import { Footer } from '../components/Footer';
+import { CHAKRA_UI_MARKDOWN_OPTIONS } from '../constants';
+import { UIWrapper } from '../components/wrappers/UIWrapper';
 import { Box, Flex } from '@chakra-ui/react';
 
 const Post = ({ contents, data }) => {
@@ -15,21 +15,16 @@ const Post = ({ contents, data }) => {
 		<>
 			<Head>
 				<title>{data.title}</title>
-				<meta
-					title="description"
-					content={data.description || ''}
-				/>
+				<meta title="description" content={data.description || ''} />
 			</Head>
-			<MenuBar />
+			<MenuBar blog />
 			<UIWrapper>
 				<Flex
 					align={{ base: '', lg: 'center' }}
 					justify={{ base: '', lg: 'center' }}
 				>
 					<Box w={{ base: '80vw', lg: 'xl' }}>
-						<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>
-							{contents}
-						</Markdown>
+						<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>{contents}</Markdown>
 					</Box>
 				</Flex>
 			</UIWrapper>
@@ -39,10 +34,10 @@ const Post = ({ contents, data }) => {
 };
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('src/posts');
+	const files = fs.readdirSync('src/blogPosts');
 	const paths = files.map((filename) => ({
 		params: {
-			slug: filename.replace('.md', ''),
+			post: filename.replace('.md', ''),
 		},
 	}));
 
@@ -52,9 +47,9 @@ export const getStaticPaths = async () => {
 	};
 };
 
-export const getStaticProps = async ({ params: { slug } }) => {
+export const getStaticProps = async ({ params: { post } }) => {
 	const markdownWithMetadata = fs
-		.readFileSync(path.join('src', 'posts', slug + '.md'))
+		.readFileSync(path.join('src', 'blogPosts', post + '.md'))
 		.toString();
 
 	const parsedMarkdown = matter(markdownWithMetadata);

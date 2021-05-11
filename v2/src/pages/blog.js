@@ -1,9 +1,12 @@
 import { Heading, Link, ListItem, UnorderedList } from '@chakra-ui/layout';
 import fs from 'fs';
 import matter from 'gray-matter';
+import { useRouter } from 'next/router';
 import { UIWrapper } from '../components/wrappers/UIWrapper';
 
 export default function Blog({ posts }) {
+	const router = useRouter();
+
 	return (
 		<UIWrapper>
 			<Heading fontSize="4xl" paddingBottom={6}>
@@ -11,16 +14,10 @@ export default function Blog({ posts }) {
 			</Heading>
 			<UnorderedList>
 				{posts
-					.sort(
-						(a, b) =>
-							new Date(b.dateCreated) -
-							new Date(a.dateCreated)
-					)
+					.sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
 					.map((post, i) => (
 						<ListItem key={i}>
-							<Link href={`/blog/${post.filename}`}>
-								{post.title}
-							</Link>
+							<Link href={`/${post.filename}`}>{post.title}</Link>
 						</ListItem>
 					))}
 			</UnorderedList>
@@ -29,11 +26,11 @@ export default function Blog({ posts }) {
 }
 
 export const getStaticProps = async () => {
-	const files = fs.readdirSync('src/posts');
+	const files = fs.readdirSync('src/blogPosts');
 	const posts = [];
 
 	files.forEach((filename) => {
-		const file = fs.readFileSync(`src/posts/${filename}`).toString();
+		const file = fs.readFileSync(`src/blogPosts/${filename}`).toString();
 		const parsedFile = matter(file);
 		posts.push({
 			title: parsedFile.data.title,
