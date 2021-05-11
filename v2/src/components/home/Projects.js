@@ -8,7 +8,7 @@ import {
 	Link,
 	Wrap,
 } from '@chakra-ui/react';
-import data from '../../data';
+import { HOME_PAGE_DATA as data } from '../../constants';
 
 export const Projects = () => {
 	return (
