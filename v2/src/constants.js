@@ -1,5 +1,4 @@
 import {
-	Code,
 	Heading,
 	ListItem,
 	OrderedList,
@@ -8,12 +7,14 @@ import {
 	Image,
 	Link,
 } from '@chakra-ui/react';
+import { MyCodeBlock } from './components/MyCodeBlock';
 
 export const GITHUB_URL = 'https://github.com/jacksonet00';
 export const LINKEDIN_URL = 'https://linkedin.com/in/jacksonet00';
 export const SOURCE_CODE_URL =
 	'https://github.com/jacksonet00/jacksontaylor.info';
 export const CHAKRA_UI_MARKDOWN_OPTIONS = {
+	wrapper: 'article',
 	overrides: {
 		h1: {
 			component: Heading,
@@ -85,15 +86,7 @@ export const CHAKRA_UI_MARKDOWN_OPTIONS = {
 			},
 		},
 		code: {
-			component: Code,
-			props: {
-				fontSize: { base: 'xs', sm: 'sm', md: 'md' },
-				padding: 1,
-				borderRadius: 2,
-				w: { base: '80vw', lg: 'xl' },
-				marginBottom: 6,
-				colorScheme: 'facebook',
-			},
+			component: MyCodeBlock,
 		},
 		img: {
 			component: Image,
