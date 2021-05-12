@@ -63,8 +63,7 @@ export const themeConfig = {
 		widest: '0.1em',
 	},
 	config: {
-		initialColorMode: 'light',
-		useSystemColorMode: true,
+		initialColorMode: 'dark',
 	},
 	breakpoints: createBreakpoints({
 		sm: '30em',
