@@ -13,9 +13,9 @@ export const AboutMe = () => {
 							</Text>
 						);
 					})}
-					<Link w="fit-content" href="/blog">
+					{/* <Link w="fit-content" href="/blog">
 						Read my blog
-					</Link>
+					</Link> */}
 				</VStack>
 			</Center>
 		</Box>

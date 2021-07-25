@@ -20,25 +20,23 @@ export const HOME_PAGE_DATA = {
 	},
 	aboutMe: {
 		paragraphs: [
-			`I’m a computer science student studying at the
-						University of Florida who loves building freelance
-						applications for clients and personal projects.
-						Currently, I'm interested in the impact of
-						software in sectors slow to adopt new
-						technologies.`,
-			`When I’m not studying or writing code, I enjoy
-						learning about technology in the developing world
-						🌍, brewing chemex coffee ☕️, and practicing
-						meditation 🧘.`,
+			`👋🏼 I'm a third year student at the University of Florida 🐊 studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
+			`I'm passionate about technology and excited by any opportunity to direct this passion towards making a positive impact in peoples' lives.`,
 		],
 	},
 	projects: [
 		{
+			title: 'BRCA Screener',
+			link: 'https://github.com/yvngaayush/brcascreener',
+			description: 'A cross-platform cancer gene screening app created in partnership with medical researchers from Florida International University. Currently in use by a study group of 800+ doctors to evaluate the effectiveness of the technology.',
+			tags: ['Flutter', 'Firebase', 'Google Cloud Platform']
+		},
+		{
 			title: 'Surge Inventory',
 			link: 'https://github.com/snl-dev-team/snl-inventory-app',
 			description:
-				'Manufacturing inventory software with auto report generation and multi-level relations between orders, products, and materials.',
-			tags: ['Python', 'GraphQL 💜', 'AWS Serverless', 'React'],
+				'An inventory management tool with automated reporting and support for multi-level relations between orders, products, and materials.',
+			tags: ['Flask', 'GraphQL', 'AWS Serverless', 'React'],
 		},
 		{
 			title: 'Reply Chef',
@@ -66,19 +64,19 @@ export const HOME_PAGE_DATA = {
 		{
 			company: 'JP Morgan Chase',
 			role: 'Software Engineer Intern',
-			date: 'Summer 2021',
+			date: 'June 2021 - Present',
 			bullets: [
-				`Joining the Tampa Office in June as a software engineer.`,
-				`So excited for my first day!`,
+				`Created an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
+				`Improved user experience by rewriting the merchant service application using a modern tech stack, enabling automatic authentication and faster navigation.`,
 			],
 		},
 		{
 			company: 'University of Central Florida',
 			role: 'Teaching Assistant',
-			date: 'July 2020 - Present',
+			date: 'July 2020 - June 2021',
 			bullets: [
-				`Collaborated remotely with a team of instructors and teaching assistants via Slack and Zoom to effectively communicate concepts to students in an online environment.`,
-				`Led sessions on data manipulation with Python, data storage in SQL, and many other key topics for data driven development.`,
+				`Led instructional sessions on data pipelining, API development, and database systems.`,
+				`Aided instructor by hosting office hours, answering questions, and grading projects.`,
 			],
 		},
 		{
@@ -86,24 +84,23 @@ export const HOME_PAGE_DATA = {
 			role: 'Outgoing Shipping Lead',
 			date: 'May 2020 - August 2020',
 			bullets: [
-				`Maintained a daily shipping schedule by coordinating with peers and delegating tasks.`,
-				`Communicated with superiors while referencing internal data to plan for upcoming shipments.`,
-				`Assisted in training new employees in the special services department.`,
+				`Improved inventory management workflow by developing scalable, user-friendly software which automated reporting and reduced the need for manual data entry.`,
+				`Ensured fulfillment for 9,000+ units/week of product by coordinating with the operations team and planning the packaging schedule. `,
 			],
 		},
 	],
 	skills: [
 		{
 			type: 'Languages',
-			items: ['Python', 'Javascript', 'SQL'],
+			items: ['Python', 'Typescript', 'Javascript', 'SQL', 'Java'],
+		},
+		{
+			type: 'Libraries / Frameworks',
+			items: ['React', 'React-Native', 'Flutter', 'Flask', 'Express'],
 		},
 		{
 			type: 'Technologies',
-			items: ['GraphQL', 'Node', 'Pandas'],
-		},
-		{
-			type: 'Tools',
-			items: ['AWS', 'GCP', 'GitHub'],
+			items: ['Node', 'GraphQL', 'Docker', 'Cloud/Serverless'],
 		},
 	],
 };

@@ -6,7 +6,7 @@ export const Skills = () => {
 		<Flex
 			direction={{ lg: 'row', base: 'column' }}
 			w="xl"
-			align={{ base: 'start', lg: 'center' }}
+			align={{ base: 'start', lg: 'top' }}
 			justify={{ lg: 'center' }}
 		>
 			{data.skills.map((skillSet) => {

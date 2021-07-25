@@ -28,10 +28,10 @@ export default function Home() {
 					>
 						<SectionHeader heading="About me" />
 						<AboutMe />
-						<SectionHeader heading="Projects" />
-						<Projects />
 						<SectionHeader heading="Experience" />
 						<Experiences />
+						<SectionHeader heading="Projects" />
+						<Projects />
 						<SectionHeader heading="Skills" />
 						<Skills />
 					</Grid>
