@@ -50,7 +50,7 @@ export const HOME_PAGE_DATA = {
 			link: 'https://github.com/jacksonet00/trendviz',
 			description:
 				'A data visualization tool for Twitter trends in the United States.',
-			tags: ['Javascript', 'Node', 'React'],
+			tags: ['Twitter API', 'Firestore', 'Express', 'React', 'Node'],
 		},
 		{
 			title: 'KNN from CSV',
@@ -69,6 +69,7 @@ export const HOME_PAGE_DATA = {
 				`Created an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
 				`Improved user experience by rewriting the merchant service application using a modern tech stack, enabling automatic authentication and faster navigation.`,
 			],
+			tags: ['Javascript', 'Java', 'React', 'Spring Boot']
 		},
 		{
 			company: 'University of Central Florida',
@@ -78,6 +79,7 @@ export const HOME_PAGE_DATA = {
 				`Led instructional sessions on data pipelining, API development, and database systems.`,
 				`Aided instructor by hosting office hours, answering questions, and grading projects.`,
 			],
+			tags: ['Python', 'Flask', 'Pandas', 'SQL', 'Google Cloud Platform']
 		},
 		{
 			company: 'Sawgrass Nutra Labs',
@@ -87,6 +89,7 @@ export const HOME_PAGE_DATA = {
 				`Improved inventory management workflow by developing scalable, user-friendly software which automated reporting and reduced the need for manual data entry.`,
 				`Ensured fulfillment for 9,000+ units/week of product by coordinating with the operations team and planning the packaging schedule. `,
 			],
+			tags: ['Python', 'Javascript', 'Flask', 'GraphQL', 'React', 'Amazon Web Services']
 		},
 	],
 	skills: [

@@ -10,6 +10,9 @@ import {
 	HStack,
 	Center,
 	Text,
+	Wrap,
+	Tag,
+	TagLabel
 } from '@chakra-ui/react';
 import { HOME_PAGE_DATA as data } from '../../constants';
 
@@ -33,6 +36,7 @@ export const Experiences = () => {
 								bullets={exp.bullets}
 								role={exp.role}
 								date={exp.date}
+								tags={exp.tags}
 							/>
 						</TabPanel>
 					);
@@ -42,7 +46,7 @@ export const Experiences = () => {
 	);
 };
 
-const Experience = ({ bullets, role, date }) => {
+const Experience = ({ bullets, role, date, tags }) => {
 	return (
 		<Box>
 			<Center paddingBottom={6}>
@@ -56,6 +60,15 @@ const Experience = ({ bullets, role, date }) => {
 					return <ListItem key={bullet}>{bullet}</ListItem>;
 				})}
 			</UnorderedList>
+			<Wrap justifyContent="left" alignItems="start" paddingTop={6}>
+					{tags.map((tag) => {
+						return (
+							<Tag colorScheme="red" key={tag} size="lg" borderRadius="none">
+								<TagLabel>{tag}</TagLabel>
+							</Tag>
+						);
+					})}
+				</Wrap>
 		</Box>
 	);
 };
