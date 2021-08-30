@@ -20,7 +20,7 @@ export const HOME_PAGE_DATA = {
 	},
 	aboutMe: {
 		paragraphs: [
-			`Hi, I'm Jackson 👋🏼. I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
+			`Hi, I'm Jackson 🌈. I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
 			`When I'm not studying or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops ☕️. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
 		],
 	},
@@ -65,10 +65,10 @@ export const HOME_PAGE_DATA = {
 		{
 			company: 'JP Morgan Chase',
 			role: 'Software Engineer Intern',
-			date: 'June 2021 - Present',
+			date: 'June 2021 - August 2021',
 			bullets: [
 				`Created an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
-				`Improved user experience by rewriting the merchant service application using a modern tech stack, enabling automatic authentication and faster navigation.`,
+				`Upgraded merchant services terminal with automatic authentication and improved navigation which led to a 35% improvement in time to complete customer service tasks.`,
 			],
 			tags: ['Javascript', 'Java', 'React', 'Spring Boot'],
 		},
