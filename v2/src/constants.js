@@ -20,16 +20,17 @@ export const HOME_PAGE_DATA = {
 	},
 	aboutMe: {
 		paragraphs: [
-			`👋🏼 I'm a third year student at the University of Florida 🐊 studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
-			`I'm passionate about technology and excited by any opportunity to direct this passion towards making a positive impact in peoples' lives.`,
+			`Hi, I'm Jackson 👋🏼. I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
+			`When I'm not studying or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops ☕️. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
 		],
 	},
 	projects: [
 		{
 			title: 'BRCA Screener',
 			link: 'https://github.com/yvngaayush/brcascreener',
-			description: 'A cross-platform cancer gene screening app created in partnership with medical researchers from Florida International University. Currently in use by a study group of 800+ doctors to evaluate the effectiveness of the technology.',
-			tags: ['Flutter', 'Firebase', 'Google Cloud Platform']
+			description:
+				'A cross-platform cancer gene screening app created in partnership with medical researchers from Florida International University. Currently in use by a study group of 800+ doctors to evaluate the effectiveness of the technology.',
+			tags: ['Flutter', 'Firebase', 'Google Cloud Platform'],
 		},
 		{
 			title: 'Surge Inventory',
@@ -69,7 +70,7 @@ export const HOME_PAGE_DATA = {
 				`Created an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
 				`Improved user experience by rewriting the merchant service application using a modern tech stack, enabling automatic authentication and faster navigation.`,
 			],
-			tags: ['Javascript', 'Java', 'React', 'Spring Boot']
+			tags: ['Javascript', 'Java', 'React', 'Spring Boot'],
 		},
 		{
 			company: 'University of Central Florida',
@@ -79,7 +80,7 @@ export const HOME_PAGE_DATA = {
 				`Led instructional sessions on data pipelining, API development, and database systems.`,
 				`Aided instructor by hosting office hours, answering questions, and grading projects.`,
 			],
-			tags: ['Python', 'Flask', 'Pandas', 'SQL', 'Google Cloud Platform']
+			tags: ['Python', 'Flask', 'Pandas', 'SQL', 'Google Cloud Platform'],
 		},
 		{
 			company: 'Sawgrass Nutra Labs',
@@ -89,7 +90,14 @@ export const HOME_PAGE_DATA = {
 				`Improved inventory management workflow by developing scalable, user-friendly software which automated reporting and reduced the need for manual data entry.`,
 				`Ensured fulfillment for 9,000+ units/week of product by coordinating with the operations team and planning the packaging schedule. `,
 			],
-			tags: ['Python', 'Javascript', 'Flask', 'GraphQL', 'React', 'Amazon Web Services']
+			tags: [
+				'Python',
+				'Javascript',
+				'Flask',
+				'GraphQL',
+				'React',
+				'Amazon Web Services',
+			],
 		},
 	],
 	skills: [
