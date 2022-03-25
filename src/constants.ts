@@ -15,8 +15,8 @@ export const SOURCE_CODE_URL =
   "https://github.com/jacksonet00/jacksontaylor.info";
 export const HOME_PAGE_DATA = {
   greeting: {
-    headline: "Namasté",
-    subText: `I'm Jackson, a software developer.`,
+    headline: "hi there 👋🏼",
+    subText: `i'm jackson, a software developer.`,
   },
   aboutMe: {
     paragraphs: [
@@ -63,41 +63,23 @@ export const HOME_PAGE_DATA = {
   ],
   experiences: [
     {
+      company: "Meta",
+      role: "Software Engineer Intern",
+      date: "May 20212 - August 2022",
+      bullets: [
+        "Excited for my first day at the Menlo Park campus on May 23!",
+      ],
+      tags: [],
+    },
+    {
       company: "JP Morgan Chase",
       role: "Software Engineer Intern",
       date: "June 2021 - August 2021",
       bullets: [
-        `Created an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
+        `Developed an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
         `Upgraded merchant services terminal with automatic authentication and improved navigation which led to a 35% improvement in time to complete customer service tasks.`,
       ],
-      tags: ["Javascript", "Java", "React", "Spring Boot"],
-    },
-    {
-      company: "University of Central Florida",
-      role: "Teaching Assistant",
-      date: "July 2020 - June 2021",
-      bullets: [
-        `Led instructional sessions on data pipelining, API development, and database systems.`,
-        `Aided instructor by hosting office hours, answering questions, and grading projects.`,
-      ],
-      tags: ["Python", "Flask", "Pandas", "SQL", "Google Cloud Platform"],
-    },
-    {
-      company: "Sawgrass Nutra Labs",
-      role: "Outgoing Shipping Lead",
-      date: "May 2020 - August 2020",
-      bullets: [
-        `Improved inventory management workflow by developing scalable, user-friendly software which automated reporting and reduced the need for manual data entry.`,
-        `Ensured fulfillment for 9,000+ units/week of product by coordinating with the operations team and planning the packaging schedule. `,
-      ],
-      tags: [
-        "Python",
-        "Javascript",
-        "Flask",
-        "GraphQL",
-        "React",
-        "Amazon Web Services",
-      ],
+      tags: [ "Javascript",  "React", "Java",  "Spring Boot",],
     },
   ],
   skills: [
@@ -114,11 +96,12 @@ export const HOME_PAGE_DATA = {
     },
     {
       type: "Backend Development",
-      items: ["C++", "Python", "Java", "SQL", "REST", "GraphQL", "Shell"],
+      items: ["Java", "Python", "C++", "SQL", "REST", "GraphQL"],
     },
     {
       type: "Data Analysis",
       items: [
+        "Python",
         "Numpy",
         "Matplotlib",
         "Pandas",
