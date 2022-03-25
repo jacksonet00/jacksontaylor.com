@@ -10,7 +10,7 @@ export const Skills = () => {
           direction={{ lg: "row", base: "column" }}
           w={{ lg: "xl", base: "95%" }}
           align={{ base: "start", lg: "top" }}
-          justify={{ lg: "center" }}
+          justify={{ lg: "center", base: "flex-start" }}
           gap={6}
         >
           {data.skills.map((skillSet) => {
