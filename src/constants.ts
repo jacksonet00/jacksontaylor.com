@@ -20,7 +20,7 @@ export const HOME_PAGE_DATA = {
   },
   aboutMe: {
     paragraphs: [
-      `Hi, I'm Jackson 🌈. I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
+      `I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
       `When I'm not studying or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops ☕️. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
     ],
   },

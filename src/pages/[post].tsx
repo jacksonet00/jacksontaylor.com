@@ -23,8 +23,8 @@ const Post = ({ contents, data }) => {
 					align={{ base: '', lg: 'center' }}
 					justify={{ base: '', lg: 'center' }}
 				>
-					<Box w={{ base: '80vw', lg: 'xl' }}>
-						<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS}>{contents}</Markdown>
+					<Box w={{ base: '95%', lg: 'xl' }}>
+						<Markdown options={CHAKRA_UI_MARKDOWN_OPTIONS as any}>{contents}</Markdown>
 					</Box>
 				</Flex>
 			</UIWrapper>

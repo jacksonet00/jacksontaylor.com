@@ -1,9 +1,10 @@
-import { Box, Center, VStack, Text, Link } from '@chakra-ui/react';
+import { Box, Center, VStack, Text, Link, Heading, Flex } from '@chakra-ui/react';
 import { HOME_PAGE_DATA as data } from '../../constants';
 
 export const AboutMe = () => {
 	return (
-		<Box w={{ base: '80vw', lg: 'xl' }}>
+		<Flex flexDir="column" gap={8}>
+			<Heading fontSize="x-large">About me</Heading>
 			<Center>
 				<VStack spacing={6} align="left">
 					{data.aboutMe.paragraphs.map((text, i) => {
@@ -18,6 +19,6 @@ export const AboutMe = () => {
 					</Link> */}
 				</VStack>
 			</Center>
-		</Box>
+		</Flex>
 	);
 };

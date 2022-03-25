@@ -1,4 +1,4 @@
-import { VStack, Grid } from '@chakra-ui/react';
+import { VStack, Grid, Flex } from '@chakra-ui/react';
 import { Greeting } from '../components/home/Greeting';
 import { Experiences } from '../components/home/Experiences';
 import { Skills } from '../components/home/Skills';
@@ -18,23 +18,22 @@ export default function Home() {
 			<UIWrapper home>
 				<VStack spacing={24}>
 					<Greeting paddingBottom={24} />
-					<Grid
-						w="100%"
-						templateColumns={{
-							lg: '1fr 3fr',
-							base: '1fr',
-						}}
-						gap={{ lg: 24, base: 12 }}
-					>
-						<SectionHeader heading="About me" />
-						<AboutMe />
-						<SectionHeader heading="Experience" />
-						<Experiences />
-						<SectionHeader heading="Projects" />
-						<Projects />
-						<SectionHeader heading="Skills" />
-						<Skills />
-					</Grid>
+					<Flex
+						w={{ base: "95%", lg: 'lg' }} alignItems="center">
+
+						<Flex
+							flexDirection="column"
+							alignItems="center"
+							gap={{ lg: 24, base: 12 }}
+							w={{ base: "95%", lg: 'xl' }}
+						>
+							<AboutMe />
+							<Experiences />
+							<Projects />
+							<Skills />
+						</Flex>
+					</Flex>
+
 				</VStack>
 			</UIWrapper>
 		</>

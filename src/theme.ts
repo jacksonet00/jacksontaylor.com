@@ -1,3 +1,4 @@
+import { ConfigColorMode } from "@chakra-ui/react";
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
 export const themeConfig = {
@@ -63,7 +64,7 @@ export const themeConfig = {
 		widest: '0.1em',
 	},
 	config: {
-		initialColorMode: 'dark',
+		initialColorMode: 'dark' as ConfigColorMode,
 	},
 	breakpoints: createBreakpoints({
 		sm: '30em',

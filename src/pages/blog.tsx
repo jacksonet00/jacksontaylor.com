@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
 			</Heading>
 			<UnorderedList>
 				{posts
-					.sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated))
+					.sort((a, b) => new Date(b.dateCreated).valueOf() - new Date(a.dateCreated).valueOf())
 					.map((post, i) => (
 						<ListItem key={i}>
 							<Link href={`/${post.filename}`}>{post.title}</Link>

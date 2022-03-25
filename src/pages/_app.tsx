@@ -2,10 +2,11 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
 import { themeConfig } from '../theme';
 import Head from 'next/head';
+import { AppProps } from "next/dist/next-server/lib/router/router";
 
 const theme = extendTheme(themeConfig);
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>

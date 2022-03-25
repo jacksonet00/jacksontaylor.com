@@ -12,7 +12,7 @@ import { HomeIcon, MarkGithubIcon } from '@primer/octicons-react';
 import { GITHUB_URL, LINKEDIN_URL } from '../constants';
 import { useRouter } from 'next/router';
 
-export const MenuBar = ({ home, blog }) => {
+export const MenuBar = ({ home = null, blog }) => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const router = useRouter();
 
