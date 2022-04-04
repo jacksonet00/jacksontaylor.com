@@ -15,59 +15,30 @@ export const SOURCE_CODE_URL =
   "https://github.com/jacksonet00/jacksontaylor.info";
 export const HOME_PAGE_DATA = {
   greeting: {
-    headline: "hi there 👋🏼",
+    headline: "greetings",
     subText: `i'm jackson, a software developer.`,
   },
   aboutMe: {
     paragraphs: [
-      `I’m a third year student at the University of Florida studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons and build personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
-      `When I'm not studying or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops ☕️. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
+      `I’m a third year student at the University of Florida 🐊 studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
+      `When I'm not coding or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
     ],
   },
   projects: [
     {
-      title: "BRCA Screener",
-      link: "https://github.com/yvngaayush/brcascreener",
-      description:
-        "A cross-platform cancer gene screening app created in partnership with medical researchers from Florida International University. Currently in use by a study group of 800+ doctors to evaluate the effectiveness of the technology.",
-      tags: ["Flutter", "Firebase", "Google Cloud Platform"],
-    },
-    {
-      title: "Surge Inventory",
-      link: "https://github.com/snl-dev-team/snl-inventory-app",
-      description:
-        "An inventory management tool with automated reporting and support for multi-level relations between orders, products, and materials.",
-      tags: ["Flask", "GraphQL", "AWS Serverless", "React"],
-    },
-    {
-      title: "Reply Chef",
-      link: "https://github.com/jacksonet00/reply-chef",
-      description:
-        "An AI-driven creator engagement platform. Winner of the Accenture Prize @ Swamphacks 2021.",
-      tags: ["Python", "Google Cloud NLP", "React"],
-    },
-    {
-      title: "TrendViz",
-      link: "https://github.com/jacksonet00/trendviz",
-      description:
-        "A data visualization tool for Twitter trends in the United States.",
-      tags: ["Twitter API", "Firestore", "Express", "React", "Node"],
-    },
-    {
-      title: "KNN from CSV",
-      link: "https://github.com/jacksonet00/KNN-from-CSV",
-      description:
-        "A command line tool for building classification models from spreadsheets.",
-      tags: ["Python", "Scikit Learn", "Pandas"],
+      title: "Sock",
+      link: "https://thesockapp.com",
+      description: "A cross-platform native mobile app for roommates to manage shared spaces. Sock (beta) has received over 50 downloads and has approximately 20 daily active users.",
+      tags: ["Typescript", "React Native", "Google Cloud Platform"],
     },
   ],
   experiences: [
     {
       company: "Meta",
       role: "Software Engineer Intern",
-      date: "May 20212 - August 2022",
+      date: "May 2022 - August 2022",
       bullets: [
-        "Excited for my first day at the Menlo Park campus on May 23!",
+        "Excited to be joining Meta in Menlo Park, Ca!",
       ],
       tags: [],
     },
@@ -77,7 +48,7 @@ export const HOME_PAGE_DATA = {
       date: "June 2021 - August 2021",
       bullets: [
         `Developed an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
-        `Upgraded merchant services terminal with automatic authentication and improved navigation which led to a 35% improvement in time to complete customer service tasks.`,
+        `Upgraded merchant services terminal with automatic authentication and improved navigation which led to a 35% improvement in time to complete critical customer service tasks.`,
       ],
       tags: [ "Javascript",  "React", "Java",  "Spring Boot",],
     },

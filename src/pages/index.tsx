@@ -25,7 +25,7 @@ export default function Home() {
 							flexDirection="column"
 							alignItems="center"
 							gap={{ lg: 24, base: 12 }}
-							w={{ base: "95%", lg: 'xl' }}
+							w={{ base: "100%", lg: 'xl' }}
 						>
 							<AboutMe />
 							<Experiences />

@@ -13,7 +13,8 @@ import {
 	Tag,
 	TagLabel,
 	Flex,
-	Heading
+	Heading,
+	Box
 } from '@chakra-ui/react';
 import { HOME_PAGE_DATA as data } from '../../constants';
 
@@ -22,7 +23,7 @@ export const Experiences = () => {
 		<Flex flexDir="column" gap={8}>
 			<Heading fontSize="x-large">Experience</Heading>
 			<Center>
-				<Tabs colorScheme="red" isFitted w={{ base: '95%', lg: 'xl' }}>
+				<Tabs colorScheme="red" isFitted w={{ base: '100%', md: "xl" }}>
 					<TabList flexDirection={{ base: 'column', lg: 'row' }}>
 						{data.experiences.map((exp) => {
 							return (
@@ -57,8 +58,9 @@ const Experience = ({ bullets, role, date, tags }) => {
 		<Flex flexDir="column">
 			<Center paddingBottom={6}>
 				<HStack spacing="auto" w="100%">
-					<Text fontWeight="bold">{role}</Text>
-					<Text fontWeight="bold">{date}</Text>
+					<Text fontSize={{ base: "sm", lg: "md" }} fontWeight="bold">{role}</Text>
+					<Box minW={10} />
+					<Text fontSize={{ base: "sm", lg: "md" }} fontWeight="bold">{date}</Text>
 				</HStack>
 			</Center>
 			<UnorderedList spacing={6}>

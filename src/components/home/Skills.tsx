@@ -8,7 +8,7 @@ export const Skills = () => {
       <Center>
         <Flex
           direction={{ lg: "row", base: "column" }}
-          w={{ lg: "xl", base: "95%" }}
+          w={{ lg: "xl", base: "100%" }}
           align={{ base: "start", lg: "top" }}
           justify={{ lg: "center", base: "flex-start" }}
           gap={6}
