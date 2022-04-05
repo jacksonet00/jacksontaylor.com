@@ -20,7 +20,7 @@ import { HOME_PAGE_DATA as data } from '../../constants';
 
 export const Experiences = () => {
 	return (
-		<Flex flexDir="column" gap={8}>
+		<Flex flexDir="column" gap={8} w={"100%"}>
 			<Heading fontSize="x-large">Experience</Heading>
 			<Center>
 				<Tabs colorScheme="red" isFitted w={{ base: '100%', md: "xl" }}>
