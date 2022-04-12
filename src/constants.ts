@@ -38,7 +38,7 @@ export const HOME_PAGE_DATA = {
       role: "Software Engineer Intern",
       date: "May 2022 - August 2022",
       bullets: [
-        "Excited to be joining Meta in Menlo Park, Ca!",
+        "Working on the Messaging ML Infra Team at Meta's Menlo Park, Ca campus.",
       ],
       tags: [],
     },
