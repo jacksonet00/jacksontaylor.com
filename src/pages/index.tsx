@@ -30,7 +30,7 @@ export default function Home() {
 							<AboutMe />
 							<Experiences />
 							<Projects />
-							<Skills />
+							{/* <Skills /> */}
 						</Flex>
 					</Flex>
 

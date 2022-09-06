@@ -20,16 +20,22 @@ export const HOME_PAGE_DATA = {
   },
   aboutMe: {
     paragraphs: [
-      `I’m a third year student at the University of Florida 🐊 studying Computer Science with a minor in Math. During my first two years at UF, I've had the opportunity to participate in hackathons, serve as a Teaching Assistant, and intern full time as a Software Engineer.`,
-      `When I'm not coding or browsing Pinterest, I enjoy practicing yoga, running, and engaging with the community through volunteering and working at local coffee shops. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
+      `I’m a senior at the University of Florida 🐊 studying Computer Science with a minor in Math. During my first three years at UF, I've had the opportunity to participate in hackathons and build a variety of personal projects, serve as a Teaching Assistant, and intern full time as a Software Engineer in the SF Bay Area 🌁.`,
+      `When I'm not coding or browsing Pinterest, I enjoy practicing yoga 🧘🏼‍♂️, running 🏃🏼‍♂️, and engaging with the community through volunteering and working at local coffee shops ☕️. I'm passionate about technology and excited by any opportunity to direct that passion towards making a positive impact in peoples' lives.`,
     ],
   },
   projects: [
     {
-      title: "Sock",
+      title: "Sock: for shared spaces",
       link: "https://thesockapp.com",
       description: "A cross-platform native mobile app for roommates to manage shared spaces. Sock (beta) has received over 50 downloads and has approximately 20 daily active users.",
       tags: ["Typescript", "React Native", "Google Cloud Platform"],
+    },
+    {
+      title: "Applied Data Science: Content Recommendation Systems",
+      link: "https://medium.com/@jacksonet00/applied-data-science-content-recommendation-systems-6904ffafdf4",
+      description: "An analysis of a variety of machine learning approaches relevant for content recommendation with sparse data.",
+      tags: ["Content Filtering", "Collaborative Filtering", "Sparse NN"],
     },
   ],
   experiences: [
@@ -37,10 +43,11 @@ export const HOME_PAGE_DATA = {
       company: "Meta",
       role: "Software Engineer Intern",
       date: "May 2022 - August 2022",
-      bullets: [
-        "Excited to be joining Meta in Menlo Park, Ca!",
+      bullets: [ // todo: add bolding
+        "Optimized a core ML predictor node for Instagram and Messenger in C++ resulting in 15% lower CPU utilization and 10% higher throughput which freed 146 machines across 20 regions during a company wide server crunch.",
+        `Designed and implemented a local cache for Messenger's Video recommendation serving infra which reduced CPU utilization by 10% while consuming less than one gigabyte of memory.`
       ],
-      tags: [],
+      tags: ["Machine Learning", "C++", "PHP", "Python",],
     },
     {
       company: "JP Morgan Chase",
@@ -50,7 +57,7 @@ export const HOME_PAGE_DATA = {
         `Developed an internal tool used daily by 450 customer support agents with a REST API accessed by 150 developers.`,
         `Upgraded merchant services terminal with automatic authentication and improved navigation which led to a 35% improvement in time to complete critical customer service tasks.`,
       ],
-      tags: [ "Javascript",  "React", "Java",  "Spring Boot",],
+      tags: ["Fullstack Development", "Javascript",  "React", "Java",],
     },
   ],
   skills: [
