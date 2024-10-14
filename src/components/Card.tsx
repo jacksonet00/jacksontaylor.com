@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 interface CardProps {
   iconPath: string;
@@ -8,7 +9,7 @@ interface CardProps {
   description: string[];
 }
 
-export default function Card({
+export default function CustomCard({
   iconPath,
   title,
   subtitle,
@@ -48,33 +49,16 @@ export default function Card({
 
   useEffect(() => {
     if (contentRef.current) {
-      // Apply the 'collapsed' class to clamp text
       contentRef.current.classList.add('collapsed');
-
-      // Force reflow to ensure styles are applied
       contentRef.current.getBoundingClientRect();
-
-      // Measure the collapsed height
       const collapsedHeight = contentRef.current.scrollHeight;
-
-      // Remove the 'collapsed' class to get the full height
       contentRef.current.classList.remove('collapsed');
-
-      // Force reflow again
       contentRef.current.getBoundingClientRect();
-
-      // Measure the expanded height
       const expandedHeight = contentRef.current.scrollHeight;
-
-      // Re-apply the 'collapsed' class
       contentRef.current.classList.add('collapsed');
-
-      // Set the initial maxHeight and state variables
       setCollapsedHeight(collapsedHeight);
       setExpandedHeight(expandedHeight);
       setMaxHeight(collapsedHeight);
-
-      // Determine if 'show more' button should be visible
       setShowMoreVisible(expandedHeight > collapsedHeight);
     }
   }, [description]);
@@ -83,7 +67,6 @@ export default function Card({
 
   const toggleExpand = () => {
     if (isExpanded) {
-      // Collapse the content
       setMaxHeight(collapsedHeight);
       const content = contentRef.current;
       if (content) {
@@ -94,9 +77,7 @@ export default function Card({
         content.addEventListener('transitionend', onTransitionEnd);
       }
     } else {
-      // Expand the content
       contentRef.current?.classList.remove('collapsed');
-      // Force reflow to apply the class removal before setting maxHeight
       contentRef.current?.getBoundingClientRect();
       setMaxHeight(expandedHeight);
     }
@@ -104,47 +85,46 @@ export default function Card({
   };
 
   return (
-    <div className="transition-all duration-300 ease-in-out">
-      <div
-        ref={cardRef}
-        className={`bg-slate-900 border-slate-800 border-4 p-4 w-[28rem] rounded-md flex flex-col transition-all duration-300 ease-in-out
-                    hover:p-8 hover:w-[30rem]`}
-      >
-        <div className="flex items-start">
+    <div className="transition-all duration-300 ease-in-out w-full flex flex-col items-center">
+      <div ref={cardRef} className="sm:w-[28rem] w-11/12 sm:hover:w-[30rem] transition-all duration-300 ease-in-out">
+        <div className="flex flex-row items-center space-x-2 sm:space-x-4">
           <div className="transition-transform duration-200 ease-out flex-shrink-0" style={{ transform: logoTransform }}>
             <Image
               src={iconPath}
               alt={`${title} ${subtitle} logo`}
               height={50}
               width={50}
-              className="rounded-md mr-4"
+              className="rounded-md mr-2"
             />
           </div>
           <div className="flex-grow min-w-0">
-            <h1 className="font-bold text-lg truncate">{title}</h1>
-            <h2 className="text-sm truncate">{subtitle}</h2>
-            <div
-              ref={contentRef}
-              className="mt-2 overflow-hidden transition-max-height duration-300 ease-in-out"
-              style={{
-                maxHeight: maxHeight,
-              }}
-            >
-              <ul className="list-disc list-inside space-y-1">
-                {description.map((point, index) => (
-                  <li key={index} className="text-sm">{point}</li>
-                ))}
-              </ul>
-            </div>
-            {showMoreVisible && (
-              <button
-                onClick={toggleExpand}
-                className="mt-2 text-blue-400 hover:text-blue-300 text-sm font-medium cursor-pointer"
-              >
-                {isExpanded ? "Show less" : "Show more..."}
-              </button>
-            )}
+            <div className="truncate h-[1.6rem]">{title}</div>
+            <p className="text-sm text-muted-foreground truncate">{subtitle}</p>
           </div>
+        </div>
+        <div className="max-w-10/12 sm:max-w-[28rem] ml-auto mr-auto">
+          <div
+            ref={contentRef}
+            className="overflow-hidden transition-max-height duration-300 ease-in-out ml-2 sm:ml-1.5 mt-4"
+            style={{
+              maxHeight: maxHeight,
+            }}
+          >
+            <ul className="list-disc list-inside space-y-1">
+              {description.map((point, index) => (
+                <li key={index} className="text-sm">{point}</li>
+              ))}
+            </ul>
+          </div>
+          {showMoreVisible && (
+            <Button
+              variant="link"
+              onClick={toggleExpand}
+              className="mt-2 p-0 h-auto ml-2 sm:ml-1.5 text-zinc-500"
+            >
+              {isExpanded ? "Show less" : "Show more..."}
+            </Button>
+          )}
         </div>
       </div>
     </div>

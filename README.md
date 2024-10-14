@@ -4,13 +4,8 @@ My personal website
 
 ## Components
 
-part of index:
-
 - Header
 - Bio
-
-separated:
-
 - Card
   - Project
   - Job

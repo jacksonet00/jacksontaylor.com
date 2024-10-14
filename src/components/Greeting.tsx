@@ -31,9 +31,9 @@ export const Greeting = () => {
   }, [fadeIn, index]);
 
   return (
-    <div className="flex flex-col gap-16 items-center">
-      <h1 className={`fade-in-out ${fadeIn ? "fade-in" : "fade-out"} text-6xl font-bold`}>{TEXTS[index % TEXTS.length]}</h1>
-      <p>i&apos;m jackson, a software engineer.</p>
+    <div className="flex flex-col gap-32 sm:gap-16 items-center w-full text-center">
+      <h1 className={`fade-in-out ${fadeIn ? "fade-in" : "fade-out"} text-5xl sm:text-6xl md:text-[5rem] font-bold font-cursive italic leading-[4rem]`}>{TEXTS[index % TEXTS.length]}</h1>
+      <p className="text-xl">i&apos;m jackson, a software engineer.</p>
     </div>
   );
 };
