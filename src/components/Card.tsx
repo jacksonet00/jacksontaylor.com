@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface CardProps {
+  url?: string | null;
   iconPath: string;
   title: string;
   subtitle: string;
@@ -10,6 +12,7 @@ interface CardProps {
 }
 
 export default function CustomCard({
+  url = null,
   iconPath,
   title,
   subtitle,
@@ -98,7 +101,9 @@ export default function CustomCard({
             />
           </div>
           <div className="flex-grow min-w-0">
-            <div className="truncate h-[1.6rem]">{title}</div>
+            {!url && <div className="truncate h-[1.6rem]"><h1>{title}</h1></div>}
+            {url && <Link href={url} target="_blank" className="text-blue-500 rounded-md hover:underline">{title} ➚</Link>
+            }
             <p className="text-sm text-muted-foreground truncate">{subtitle}</p>
           </div>
         </div>

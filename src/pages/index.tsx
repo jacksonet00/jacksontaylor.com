@@ -15,7 +15,7 @@ function Index() {
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Experience</h3>
           </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4 bg-red-500">
+          <div className="flex flex-col gap-4 w-full items-center mb-4">
             <Card
               iconPath="/images/logos/jpmc.jpeg"
               title="Software Engineer"
@@ -54,63 +54,11 @@ function Index() {
             />
           </div>
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
-            <h3 className="font-bold text-2xl">Projects</h3>
-          </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4">
-            <Card
-              iconPath="/images/logos/myeyetheory.png"
-              title="myeyetheory.com"
-              subtitle="Web Application"
-              description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-              ]}
-            />
-            <Card
-              iconPath="/images/logos/ichallengeu.png"
-              title="iChallengeU.app"
-              subtitle="Web Application"
-              description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-              ]}
-            />
-            <Card
-              iconPath="/images/logos/uf.jpeg"
-              title="UF 3D Print Lab"
-              subtitle="Web Application"
-              description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-              ]}
-            />
-            <Card
-              iconPath="/images/logos/sock.png"
-              title="Sock: for shared spaces."
-              subtitle="Mobile App"
-              description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-              ]}
-            />
-          </div>
-          <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Social</h3>
           </div>
           <div className="flex flex-col gap-4 w-full items-center mb-4">
             <Card
+              url="https://x.com/workwithjackson"
               iconPath="/images/logos/x.png"
               title="@workwithjackson"
               subtitle="X"
@@ -123,9 +71,67 @@ function Index() {
               ]}
             />
             <Card
+              url="https://github.com/jacksonet00"
               iconPath="/images/logos/github.webp"
               title="@jacksonet00"
               subtitle="GitHub"
+              description={[
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+              ]}
+            />
+          </div>
+          <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
+            <h3 className="font-bold text-2xl">Projects</h3>
+          </div>
+          <div className="flex flex-col gap-4 w-full items-center mb-4">
+            <Card
+              url="https://www.myeyetheory.com"
+              iconPath="/images/logos/myeyetheory.png"
+              title="myeyetheory.com"
+              subtitle="Web Application"
+              description={[
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+              ]}
+            />
+            <Card
+              url="https://www.ichallengeu.app"
+              iconPath="/images/logos/ichallengeu.png"
+              title="iChallengeU.app"
+              subtitle="Web Application"
+              description={[
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+              ]}
+            />
+            <Card
+              url="https://3dprint.uflib.ufl.edu/"
+              iconPath="/images/logos/uf.jpeg"
+              title="UF 3D Print Lab"
+              subtitle="Website"
+              description={[
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+              ]}
+            />
+            <Card
+              url="https://www.thesockapp.com"
+              iconPath="/images/logos/sock.png"
+              title="Sock: for shared spaces."
+              subtitle="Mobile App"
               description={[
                 "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
                 "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
@@ -140,6 +146,7 @@ function Index() {
           </div>
           <div className="flex flex-col gap-4 w-full items-center mb-4">
             <Card
+              url="https://medium.com/@jacksonet00/applied-data-science-content-recommendation-systems-6904ffafdf4"
               iconPath="/images/logos/medium.webp"
               title="Recommendation Systems"
               subtitle="Medium Article"
