@@ -6,10 +6,10 @@ function Index() {
   return (
     <>
       <div className="flex flex-col items-center min-h-screen gap-16 pt-40 pb-20 sm:pb-40 min-w-screen w-full">
-      <Greeting />
+        <Greeting />
         <div className="sm:w-[36rem] w-10/12 flex flex-col gap-4 items-center">
-          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Est quisque aptent quisque aptent per elit a non. Sed semper nulla himenaeos a luctus. Posuere posuere nisi faucibus finibus etiam mi. Proin potenti tellus placerat aptent cubilia sodales. Facilisis semper massa non ac, scelerisque id aptent nunc sem. Fermentum sapien elementum elementum tellus blandit dolor.</p>
-          <p>Pretium convallis eros mauris urna quam facilisis nec nibh. Donec diam convallis; magnis at interdum felis vehicula faucibus tempor. Vitae aenean habitant fringilla mattis tempor dictum. Atempus nunc molestie; sed rutrum netus. Ullamcorper laoreet ipsum fermentum fringilla pharetra fames. Libero accumsan nisi facilisis magna mi conubia eu quis. Conubia ornare eu quam id sapien interdum accumsan.</p>
+          <p>Hey! I&apos;m Jackson, a software engineer passionate about building impactful products that solve real problems. Currently, I&apos;m working on data platforms and cloud infrastructure at JP Morgan Chase, while also creating indie projects that combine AI, social features, and engaging user experiences.</p>
+          <p>I love sharing what I learn along the way - you&apos;ll find me tweeting about tech, building in public, and helping other developers level up their skills. When I&apos;m not coding, I&apos;m probably reading about new tech, working on my latest side project, or thinking about how to make software more human-centered.</p>
         </div>
         <div className="flex flex-col gap-4 w-full items-center">
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
@@ -21,11 +21,11 @@ function Index() {
               title="Software Engineer"
               subtitle="JP Morgan Chase"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Leading development of Payment Insights platform serving enterprise clients, implementing new features like monthly insights and interactive data viewers",
+                "Built comprehensive monitoring system with automated alerts for data integrity, performance tracking, and trend analysis",
+                "Spearheaded adoption of Snowflake Dynamic Tables and enhanced API infrastructure for improved data processing",
+                "Mentored interns and contributed to Force For Good program, building software solutions for educational nonprofits",
+                "Developed common frameworks and developer tools that improved team productivity and code quality"
               ]}
             />
             <Card
@@ -33,11 +33,10 @@ function Index() {
               title="Software Engineer Intern"
               subtitle="Meta Platforms"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Optimized Facebook Messenger and Instagram Direct recommendation services, achieving 15% lower CPU usage",
+                "Implemented local caching system for video recommendations while maintaining minimal memory footprint",
+                "Built backend service for remote ML model execution, enabling advanced video autoplay recommendations",
+                "Collaborated with team to improve recommendation quality and infrastructure scalability"
               ]}
             />
             <Card
@@ -45,11 +44,9 @@ function Index() {
               title="Software Engineer Intern"
               subtitle="JP Morgan Chase"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Built full-stack web application used daily by 450+ customer support agents",
+                "Developed REST API serving 150+ developers across multiple organizations",
+                "Implemented interactive interface for accessing internal data and improving workflow efficiency"
               ]}
             />
           </div>
@@ -63,11 +60,9 @@ function Index() {
               title="@workwithjackson"
               subtitle="X"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Sharing insights on software engineering, tech career growth, and building in public",
+                "Growing community of 400+ followers interested in tech, investing, and personal development",
+                "Regular updates on my journey as a software engineer and indie developer"
               ]}
             />
             <Card
@@ -76,11 +71,9 @@ function Index() {
               title="@jacksonet00"
               subtitle="GitHub"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Open source projects and code snippets that help other developers",
+                "Implementations of popular JavaScript libraries and developer tools",
+                "Public repository of learning resources and example code"
               ]}
             />
           </div>
@@ -94,11 +87,10 @@ function Index() {
               title="myeyetheory.com"
               subtitle="Web Application"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Viral AI-powered platform that analyzes eye features to provide personality insights and compatibility matches",
+                "Implemented computer vision analysis, OAuth authentication, and Stripe payment processing",
+                "Built comprehensive learning resources about eye biology and characteristics",
+                "Created engaging user experience combining science and entertainment"
               ]}
             />
             <Card
@@ -107,11 +99,10 @@ function Index() {
               title="iChallengeU.app"
               subtitle="Web Application"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Social platform for creating and joining group challenges with daily progress tracking",
+                "Built with TypeScript and Google Cloud Functions for scalability",
+                "Implemented features like phone authentication, cloud storage, and real-time leaderboards",
+                "Designed for book clubs, fitness groups, and other community challenges"
               ]}
             />
             <Card
@@ -120,11 +111,10 @@ function Index() {
               title="UF 3D Print Lab"
               subtitle="Website"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Developed employee dashboard for managing 3D printing orders and customer communications",
+                "Implemented file upload system, order tracking, and automated email updates",
+                "Built payment processing and accounting export features",
+                "Designed customer-facing website following university branding guidelines"
               ]}
             />
             <Card
@@ -133,11 +123,10 @@ function Index() {
               title="Sock: for shared spaces."
               subtitle="Mobile App"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Mobile app for managing shared living spaces and roommate coordination",
+                "Built with React Native for cross-platform compatibility",
+                "Implemented features for task management and communication",
+                "Focused on improving roommate relationships through better organization"
               ]}
             />
           </div>
@@ -151,11 +140,10 @@ function Index() {
               title="Recommendation Systems"
               subtitle="Medium Article"
               description={[
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
-                "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate eros dui magna feugiat aliquam. Et ultricies dignissim platea litora magna litora.",
+                "Deep dive into modern content recommendation systems and their real-world applications",
+                "Analysis of content-based and collaborative filtering approaches",
+                "Exploration of data science concepts in practical business contexts",
+                "Discussion of implicit vs explicit user behavior data in recommendations"
               ]}
             />
           </div>
