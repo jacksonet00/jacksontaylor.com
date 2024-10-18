@@ -91,7 +91,7 @@ export default function CustomCard({
             setMaxHeight(collapsedHeight);
 
             // Use a small threshold to account for rounding errors
-            setShowMoreVisible(expandedHeight > collapsedHeight + 5);
+            setShowMoreVisible(expandedHeight + 20 > collapsedHeight);
           }
         });
       }

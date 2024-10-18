@@ -60,9 +60,9 @@ function Index() {
               title="@workwithjackson"
               subtitle="X"
               description={[
-                "Sharing insights on software engineering, tech career growth, and building in public",
-                "Growing community of 400+ followers interested in tech, investing, and personal development",
-                "Regular updates on my journey as a software engineer and indie developer"
+                "Started an account centered around software engineering, tech career growth, and building in public",
+                "Growing community of 400+ passionate individuals interested in technology, investing, and entrepreneurship",
+                "Leveraging my presence to network in the tech industry and market my projects"
               ]}
             />
             <Card
@@ -71,9 +71,9 @@ function Index() {
               title="@jacksonet00"
               subtitle="GitHub"
               description={[
-                "Open source projects and code snippets that help other developers",
-                "Implementations of popular JavaScript libraries and developer tools",
-                "Public repository of learning resources and example code"
+                "Sharing my public projects with the open source community",
+                "Building lists of starred repositories to accelerate development for a variety of project types",
+                "Creating clones of popular Javascript libraries to share with the tech twitter community"
               ]}
             />
           </div>
