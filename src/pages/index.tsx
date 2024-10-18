@@ -8,8 +8,8 @@ function Index() {
       <div className="flex flex-col items-center min-h-screen gap-16 pt-40 pb-20 sm:pb-40 min-w-screen w-full">
         <Greeting />
         <div className="sm:w-[36rem] w-10/12 flex flex-col gap-4 items-center">
-          <p>Hey! I&apos;m Jackson, a software engineer passionate about building impactful products that solve real problems. Currently, I&apos;m working on data platforms and cloud infrastructure at JP Morgan Chase, while also creating indie projects that combine AI, social features, and engaging user experiences.</p>
-          <p>I love sharing what I learn along the way - you&apos;ll find me tweeting about tech, building in public, and helping other developers level up their skills. When I&apos;m not coding, I&apos;m probably reading about new tech, working on my latest side project, or thinking about how to make software more human-centered.</p>
+          <p>Hi, I&apos;m Jackson, a software engineer passionate about creating digital products that deliver massive value and delight users. Currently, I spend the majority of my time building large scale, data intensive applications in the cloud at a fintech company. Outside of work, I love connecting with the tech community by launching tiny internet products, meeting new people, and sharing about what I learn on my <a className="text-zinc-400 underline cursor-pointer">twitter.</a></p>
+          <p>I have been passionate about technology my entire life and I&apos;m so grateful to now be contributing my own work to the software space during this exciting time of rapid acceleration! When I&apos;m not on the computer (rare), I enjoy traveling, running, and spending time with friends & family... and my cat, Misa.</p>
         </div>
         <div className="flex flex-col gap-4 w-full items-center">
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
