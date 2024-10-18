@@ -102,7 +102,8 @@ export default function CustomCard({
 
   const logoTransform = `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`;
 
-  const toggleExpand = () => {
+  const toggleExpand = (e: React.MouseEvent) => {
+    e.preventDefault(); // Prevent default button behavior
     if (isExpanded) {
       setMaxHeight(collapsedHeight);
       const content = contentRef.current;
