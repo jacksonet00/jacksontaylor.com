@@ -15,7 +15,7 @@ function Index() {
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Experience</h3>
           </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4">
+          <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
               iconPath="/images/logos/jpmc.jpeg"
               title="Software Engineer"
@@ -53,7 +53,7 @@ function Index() {
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Social</h3>
           </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4">
+          <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
               url="https://x.com/workwithjackson"
               iconPath="/images/logos/x.png"
@@ -80,7 +80,7 @@ function Index() {
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Projects</h3>
           </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4">
+          <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
               url="https://www.myeyetheory.com"
               iconPath="/images/logos/myeyetheory.png"
@@ -133,7 +133,7 @@ function Index() {
           <div className="sm:w-[28rem] w-full ml-10 sm:ml-0 flex flex-col items-start">
             <h3 className="font-bold text-2xl">Writing</h3>
           </div>
-          <div className="flex flex-col gap-4 w-full items-center mb-4">
+          <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
               url="https://medium.com/@jacksonet00/applied-data-science-content-recommendation-systems-6904ffafdf4"
               iconPath="/images/logos/medium.webp"
