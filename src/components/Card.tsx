@@ -171,7 +171,7 @@ export default function CustomCard({
               maxHeight: `${maxHeight}px`,
             }}
           >
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 sm:space-y-2">
               {description.map((point, index) => (
                 <li key={index} className="text-sm">{point}</li>
               ))}
