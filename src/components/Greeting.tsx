@@ -32,7 +32,7 @@ export const Greeting = () => {
 
   return (
     <div className="flex flex-col gap-32 sm:gap-16 items-center w-full text-center">
-      <h1 className={`fade-in-out ${fadeIn ? "fade-in" : "fade-out"} text-5xl sm:text-6xl md:text-[5rem] font-bold font-cursive italic leading-[4rem]`}>{TEXTS[index % TEXTS.length]}</h1>
+      <h1 className={`fade-in-out ${fadeIn ? "fade-in" : "fade-out"} text-5xl sm:text-6xl md:text-[5rem] font-bold font-cursive italic leading-[4rem] h-20 sm:h-40`}>{TEXTS[index % TEXTS.length]}</h1>
       <p className="text-xl">i&apos;m jackson, a software engineer.</p>
     </div>
   );
