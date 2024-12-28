@@ -89,6 +89,15 @@ function Index() {
           </div>
           <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
+              url="https://favifont.jacksontaylor.com"
+              iconPath="/images/logos/favifont.png"
+              title="FaviFont"
+              subtitle="Web Application"
+              description={[
+                "FaviFont is a simple web tool to help designers and developers choose the best font with thier project with powerful discovery and comparison functionality.",
+              ]}
+            />
+            <Card
               url="https://www.myeyetheory.com"
               iconPath="/images/logos/myeyetheory.png"
               title="myeyetheory.com"
