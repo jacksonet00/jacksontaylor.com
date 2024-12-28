@@ -64,41 +64,41 @@ export default function CustomCard({
     };
   }, []);
 
-  useEffect(() => {
-    // Add a small delay to ensure content is properly rendered
-    const timer = setTimeout(() => {
-      if (contentRef.current) {
-        // First, remove any collapsed class to get true expanded height
-        contentRef.current.classList.remove('collapsed');
-        // Force reflow
-        contentRef.current.getBoundingClientRect();
+  // useEffect(() => {
+  //   // Add a small delay to ensure content is properly rendered
+  //   const timer = setTimeout(() => {
+  //     if (contentRef.current) {
+  //       // First, remove any collapsed class to get true expanded height
+  //       contentRef.current.classList.remove('collapsed');
+  //       // Force reflow
+  //       contentRef.current.getBoundingClientRect();
 
-        // Get the full expanded height
-        const expandedHeight = contentRef.current.scrollHeight;
+  //       // Get the full expanded height
+  //       const expandedHeight = contentRef.current.scrollHeight;
 
-        // Add collapsed class
-        contentRef.current.classList.add('collapsed');
-        // Force reflow
-        contentRef.current.getBoundingClientRect();
+  //       // Add collapsed class
+  //       contentRef.current.classList.add('collapsed');
+  //       // Force reflow
+  //       contentRef.current.getBoundingClientRect();
 
-        // Wait a frame to ensure content has properly collapsed
-        requestAnimationFrame(() => {
-          if (contentRef.current) {
-            const collapsedHeight = contentRef.current.scrollHeight;
+  //       // Wait a frame to ensure content has properly collapsed
+  //       requestAnimationFrame(() => {
+  //         if (contentRef.current) {
+  //           const collapsedHeight = contentRef.current.scrollHeight;
 
-            setCollapsedHeight(collapsedHeight);
-            setExpandedHeight(expandedHeight);
-            setMaxHeight(collapsedHeight);
+  //           setCollapsedHeight(collapsedHeight);
+  //           setExpandedHeight(expandedHeight);
+  //           setMaxHeight(collapsedHeight);
 
-            // Use a small threshold to account for rounding errors
-            setShowMoreVisible(expandedHeight + 20 > collapsedHeight);
-          }
-        });
-      }
-    }, 100);
+  //           // Use a small threshold to account for rounding errors
+  //           // setShowMoreVisible(expandedHeight + 20 > collapsedHeight);
+  //         }
+  //       });
+  //     }
+  //   }, 100);
 
-    return () => clearTimeout(timer);
-  }, [description]);
+  //   return () => clearTimeout(timer);
+  // }, [description]);
 
   const logoTransform = `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`;
 
@@ -166,18 +166,18 @@ export default function CustomCard({
         <div className="max-w-10/12 sm:max-w-[28rem] ml-auto mr-auto">
           <div
             ref={contentRef}
-            className="overflow-hidden transition-max-height duration-300 ease-in-out ml-2 sm:ml-1.5 mt-4"
-            style={{
-              maxHeight: `${maxHeight}px`,
-            }}
+            className="transition-max-height duration-300 ease-in-out ml-2 sm:ml-1.5 mt-4"
+            // style={{
+            //   maxHeight: `${maxHeight}px`,
+            // }}
           >
-            <ul className="list-disc list-inside space-y-1 sm:space-y-2">
+            <ul className="list-disc list-inside space-y-2 sm:space-y-4">
               {description.map((point, index) => (
                 <li key={index} className="text-sm">{point}</li>
               ))}
             </ul>
           </div>
-          {showMoreVisible && (
+          {/* {showMoreVisible && (
             <Button
               variant="link"
               onClick={toggleExpand}
@@ -185,7 +185,7 @@ export default function CustomCard({
             >
               {isExpanded ? "Show less" : "Show more..."}
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </div>
