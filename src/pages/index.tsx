@@ -94,7 +94,7 @@ function Index() {
               title="FaviFont"
               subtitle="Web Application"
               description={[
-                "FaviFont is a simple web tool to help designers and developers choose the best font with thier project with powerful discovery and comparison functionality.",
+                "FaviFont is a simple web tool to help designers and developers choose the best font with their project with powerful discovery and comparison functionality.",
               ]}
             />
             <Card
