@@ -62,9 +62,9 @@ function Index() {
           </div>
           <div className="flex flex-col gap-8 w-full items-center mb-4">
             <Card
-              url="https://x.com/workwithjackson"
+              url="https://x.com/zeroxjackson"
               iconPath="/images/logos/x.png"
-              title="@workwithjackson"
+              title="@zeroxjackson"
               subtitle="X"
               description={[
                 "Building a tech-focused community sharing insights on software engineering, career growth, and entrepreneurship.",

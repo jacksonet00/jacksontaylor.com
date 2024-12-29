@@ -15,7 +15,7 @@ export default function Footer() {
           />
           by{" "}
           <a
-            href="https://x.com/workwithjackson"
+            href="https://x.com/zeroxjackson"
             target="_blank"
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
