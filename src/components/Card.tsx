@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 interface CardProps {
   url?: string | null;
@@ -19,13 +18,12 @@ export default function CustomCard({
   description,
 }: CardProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [showMoreVisible, setShowMoreVisible] = useState(false);
-  const [maxHeight, setMaxHeight] = useState<number>(0);
-  const [collapsedHeight, setCollapsedHeight] = useState<number>(0);
-  const [expandedHeight, setExpandedHeight] = useState<number>(0);
+  // const [maxHeight, setMaxHeight] = useState<number>(0);
+  // const [collapsedHeight, setCollapsedHeight] = useState<number>(0);
+  // const [expandedHeight, setExpandedHeight] = useState<number>(0);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -102,27 +100,27 @@ export default function CustomCard({
 
   const logoTransform = `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`;
 
-  const toggleExpand = (e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent default button behavior
-    if (isExpanded) {
-      setMaxHeight(collapsedHeight);
-      const content = contentRef.current;
-      if (content) {
-        const onTransitionEnd = () => {
-          content.classList.add('collapsed');
-          content.removeEventListener('transitionend', onTransitionEnd);
-        };
-        content.addEventListener('transitionend', onTransitionEnd);
-      }
-    } else {
-      if (contentRef.current) {
-        contentRef.current.classList.remove('collapsed');
-        contentRef.current.getBoundingClientRect(); // Force reflow
-        setMaxHeight(expandedHeight);
-      }
-    }
-    setIsExpanded(!isExpanded);
-  };
+  // const toggleExpand = (e: React.MouseEvent) => {
+  //   e.preventDefault(); // Prevent default button behavior
+  //   if (isExpanded) {
+  //     setMaxHeight(collapsedHeight);
+  //     const content = contentRef.current;
+  //     if (content) {
+  //       const onTransitionEnd = () => {
+  //         content.classList.add('collapsed');
+  //         content.removeEventListener('transitionend', onTransitionEnd);
+  //       };
+  //       content.addEventListener('transitionend', onTransitionEnd);
+  //     }
+  //   } else {
+  //     if (contentRef.current) {
+  //       contentRef.current.classList.remove('collapsed');
+  //       contentRef.current.getBoundingClientRect(); // Force reflow
+  //       setMaxHeight(expandedHeight);
+  //     }
+  //   }
+  //   setIsExpanded(!isExpanded);
+  // };
 
   return (
     <div className="transition-all duration-300 ease-in-out w-full flex flex-col items-center">
